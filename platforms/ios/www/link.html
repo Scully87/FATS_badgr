@@ -1,0 +1,84 @@
+<html>
+<head>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.3.2.min.js"></script>
+</head>
+<body>
+<br><br>
+<h1>HELLO!!</h1>
+
+  <input id='recipient_name' name='recipient_name'><br />
+    <input type="radio" name="badge_name" value="Epic win!">Epic Win!<br />
+    <input type="radio" name="badge_name" value="You rock!">You Rock!<br />
+    <button id='send_custom_badge' href='#'>send custom badge</button>
+    <br />
+    <br />
+    <br />
+    <br />
+    <button id='pull_button' href='#'>UPDATE DETAILS</button>
+
+      <p id='name'>NAME</p>
+
+      <div id='badge_info'>
+
+        Total Number of Badges:<p id='total_badge_count'>BADGE COUNT</p>
+        Number of Epic Win Badges:<p id='epic_win_badge_count'>BADGE COUNT</p>
+
+      </div>
+
+
+    <script type="text/javascript">
+    Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQdblOHEBvZSwi94z2bHjKZuJ");
+
+    $("input:radio[name=badge_name]").click(function() {
+      var value = $(this).val();
+      console.log(value);
+
+      $('#send_custom_badge').on('click', function() {
+        var recipient_name = $('#recipient_name').val();
+        var BadgeObject = Parse.Object.extend("Badges");
+        var sender_name = Parse.User.current();
+        var badge = new BadgeObject();
+
+        badge.set("recipient", recipient_name);
+        badge.set("badge_name", value);
+        badge.set("sender", sender_name);
+        badge.save(null, {
+          success: function(badge) {
+            console.log('SUCCESS!' + value);
+          },
+          error: function(badge, error) {
+            alert('FAIL!');
+          }
+        });
+      });
+    });
+
+    $('#pull_button').on('click', function() {
+      var BadgeObject = Parse.Object.extend("Badges");
+      var query = new Parse.Query(BadgeObject);
+      query.equalTo("recipient", "Bob Smith");
+      query.count({
+        success: function(count) {
+          $('#total_badge_count').text(count)
+        }
+      })
+      query.first({
+        success: function(data) {
+          // console.log(gameScore.get("content"))
+          $('#name').text(data.get("recipient"))
+        }
+      })
+      query.equalTo("badge_name", "Epic win!");
+      query.equalTo("recipient", "Bob Smith");
+      query.count({
+        success: function(count) {
+          $('#epic_win_badge_count').text(count)
+        }
+      })
+    });
+
+  </script>
+
+</body>
+</html>
