@@ -78,6 +78,27 @@
       })
     });
 
+    $('#load_badge_data').on('click', function() {
+      var current_user = Parse.User.current();
+      var name_of_current_user = current_user.getUsername();
+      var BadgeTable = Parse.Object.extend("Badges");
+      var query = new Parse.Query(BadgeTable);
+      query.equalTo("recipient", "andrew5");
+      query.find({
+        success: function(data) {
+
+          //This for loop will require either Handlebars.js or Mustache to render the array received from the API call
+
+          for(var i=0; i<data.length; i++) {
+            var badge = data[i];
+            $('#name_of_badge').text(badge.get("badge_name"))
+            $('#name_of_sender').text(badge.get("username"))
+            $('#date').text(badge.createdAt)
+          }
+        }
+      })
+    });
+
   </script>
 
 </body>

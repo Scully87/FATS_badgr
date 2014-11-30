@@ -50,8 +50,14 @@ var app = {
 
 $('#tap-delay').click(function() {
   var $self = $(this);
+  $self.draggable();
   $self.one('webkitAnimationEnd', function() {
     $self.removeClass('pulse');
   }).addClass('pulse');
 });
 
+$('#no-tap-delay').on('click', function() {
+    $('#popupBasic').toggle("slow", function(){
+        // $(this).slideDown();
+    });
+});
