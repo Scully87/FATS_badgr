@@ -48,7 +48,9 @@ var app = {
     }
 };
 
-$('#tap-delay').click(function() {
+
+
+$('#badger-logo').click(function() {
   var $self = $(this);
   $self.draggable();
   $self.one('webkitAnimationEnd', function() {
@@ -56,8 +58,7 @@ $('#tap-delay').click(function() {
   }).addClass('pulse');
 });
 
-$('#no-tap-delay').on('click', function() {
+$('#badger-logo').on('click', function() {
     $('#popupBasic').toggle("slow", function(){
-        // $(this).slideDown();
     });
 });

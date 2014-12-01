@@ -30,30 +30,46 @@
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
 
     <link rel="stylesheet" type="text/css" href="css/index.css" />
-
-    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+ <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="//code.jquery.com/ui/1.11.2/jquery-ui.min.js"></script>
 
  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-    <script src="jquery.ui.touch-punch.min.js"></script>
+
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+
+<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
 <section class="wrapper">
   <section class="holder">
-    <section class="header">Badgr!
-    </section>
 
-  <a id="no-tap-delay"
-   class="html5logo"></a>
+    <section class="header">Badgr!</section>
+    <section id="badger-logo"></section>
+
+<!--***************
+      pop-up login
+    *************** -->
+<section class="popup">
   <section id="popupBasic" data-role="popup">
-    <input id='username' type='text' name='username' placeholder='Username'>
-      <br />
-    <input id='password' type='password' name='password' placeholder='Password'>
-      <br/>
-    <button id='sign_in' href='#'>sign in</button>
-    <button id='sign_up_button' href='#'>sign up</button>
+    <input type="text" value="Username" id='username' name='username'/>
+    <input type='text' value='Password' id='password' name='password' />
+    <input type='submit' value='Sign up' id='sign_in' href='#' />
+    <input type='submit' value="Sign in" id='sign_up_button' href='#'>
   </section>
+</section>
+
+<!-- ***********
+  center text
+*********** -->
+<section class="home-text">Give badges to your mates!!</section>
+<!-- ************
+   fbk login
+************ -->
+
+<section class="fb-login">
+  <a href="/facebook-login.html"><section id="facebook"><img src="img/fbk1.png" /><section id="fbk-text">Log in with Facebook</section></section></a>
+</section>
 
 
 
@@ -69,6 +85,31 @@
 
 
 
+
+
+<!-- <section id="drop-box" class="ui-widget-header">
+  <p>Drop here</p>
+</section> -->
+
+
+
+<!--
+<script>
+  $(function() {
+    $('#tap-delay').draggable();
+
+    $('#droppable').droppable(.droppable({
+      drop: function( event, ui ) {
+        $( this )
+          .addClass( "ui-state-highlight" )
+          .find( "p" )
+            .html( "Dropped!" );
+      }
+    });
+  });
+</script>
+
+ -->
 
 
 

@@ -48,7 +48,9 @@ var app = {
     }
 };
 
-$('#tap-delay').click(function() {
+
+
+$('#badger-logo').click(function() {
   var $self = $(this);
   $self.draggable();
   $self.one('webkitAnimationEnd', function() {
@@ -56,13 +58,7 @@ $('#tap-delay').click(function() {
   }).addClass('pulse');
 });
 
-$('#no-tap-delay').click(function() {
-    $('#popupBasic').toggle(100);
+$('#badger-logo').on('click', function() {
+    $('#popupBasic').toggle("slow", function(){
+    });
 });
-
-$(document).ready(function() {
-
-    $('#car').draggable()
-
-});
-
