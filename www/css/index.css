@@ -19,8 +19,18 @@
 /*===============
       MAIN
 ===============*/
+*{
+  font-family: 'Comfortaa', cursive;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 body {
-  background: salmon;
+  background: #00A79D;
 }
 
 .wrapper {
@@ -34,13 +44,6 @@ body {
   width: 100%;
 }
 
-.header {
-  font-family: 'PT Sans Narrow', sans-serif;
-  font-size: 2em;
-  color: white;
-  margin-left: 5px;
-}
-
 /*=================
   Pop-up login
 ==================*/
@@ -51,7 +54,6 @@ body {
   /*margin-bottom: 10px;*/
   width: 100%;
   height: 37%;
-  font-family: 'PT Sans Narrow', sans-serif;
 
 /*  border: solid;
   border-size: 1px;
@@ -59,10 +61,8 @@ body {
 }
 
 #popupBasic {
-  box-shadow: 5px 5px 2px #888888;
-  font-family: 'PT Sans Narrow', sans-serif;
-  background-color: #52CCCC;
-  border: solid 2px #52CCCC;
+  /*box-shadow: 5px 5px 2px #888888;*/
+  background-color: #00A79D;
   width: 60%;
   border-radius: 5px;
   padding: 10px;
@@ -72,7 +72,6 @@ body {
 }
 
 input {
-  font-family: 'PT Sans Narrow', sans-serif;
   margin: 0 0 .4em 0;
   width: 100%;
   height: 40px;
@@ -82,29 +81,36 @@ input {
   border: 0;
   border-bottom: 5px solid rgba(0,0,0,.12);
   line-height: 40px;
+  font-size: 1em;
 }
 
 [type='text'] {
-  font-family: 'PT Sans Narrow', sans-serif;
-  padding-left: 1em;
+  text-decoration: none;
+  font-size: 1.7em;
+  padding-left: 0.5em;
+  box-shadow: 4px 4px 4px #888888;
+}
+
+[type='password'] {
+  text-decoration: none;
+  font-size: 1.7em;
+  padding-left: 0.5em;
+  box-shadow: 4px 4px 4px #888888;
 }
 
 [type='submit'] {
-  font-family: 'PT Sans Narrow', sans-serif;
+  box-shadow: 4px 4px 4px #888888;
   color: white;
   background-color: #3B5998;
   font-weight: 600;
 }
 
 [type='text']:focus {
-  font-family: 'PT Sans Narrow', sans-serif;
   border: 0;
   border-bottom: 5px solid #2980b9;
   color: #3B5998;
   outline: none;
 }
-
-
 
 /*=============
   Badger Logo
@@ -112,13 +118,17 @@ input {
 
 #badger-logo {
   z-index: 99;
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
   display: block;
   width: 128px;
   height: 128px;
-  background: url(/img/rsz_badger-01.png) no-repeat;
+  background: url(/img/logo-01.png) no-repeat;
+  background-size: 128px 128px;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
+
 #badger-logo:active {
   -webkit-transform: scale3d(0.9, 0.9, 1);
 }
@@ -133,19 +143,33 @@ input {
   100% { -webkit-transform: scale3d(1,1,1); }
 }
 
+@keyframes boom {
+  0% {
+    margin-top:-34px;
+    box-shadow:0px 34px 50px rgba(0,0,0,.1);
+    background-color:rgb(180,185,190);
+    transform:scale(1.1);
+  }
+  100%{
+    margin-top:0px;
+   box-shadow:0px 5px 4px rgba(0,0,0,.5);
+    background-color:rgb(200,210,221);
+    transform:scale(.8);
+  }
+}
+
 /*==============
    MAIN TEXT
 ==============*/
 .home-text {
-  height: 10px;
+  height: 80px;
   width: 100%;
   text-align: center;
-  font-family: 'PT Sans Narrow', sans-serif;
   letter-spacing: 2px;
-  font-size: 1.5em;
+  font-size: 1.9em;
   color: white;
   position: relative;
-  margin-top: 5px;
+  margin: 5px;
   /*margin-bottom: 0px;*/
 }
 
@@ -156,12 +180,11 @@ input {
 .fb-login {
   box-shadow: 12px 5px 10px #888888;
   position: relative;
-  margin-top: 15%;
+  margin-top: 5%;
   width: 70%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  font-family: 'PT Sans Narrow', sans-serif;
 }
 
 #facebook {
@@ -172,15 +195,14 @@ input {
   width: 100%;
   background-color: #3B5998;
   color: white;
-  padding-top: 15px;
-  font-size: 1.4em;
-  font-family: 'PT Sans Narrow', sans-serif;
+  padding-top: 17px;
+  font-size: 1.2em;
   padding-left: 5px;
+  padding-right: 5px;
 }
 
 #facebook-text {
   text-decoration: none;
-  font-family: 'PT Sans Narrow', sans-serif;
   color: white;
   position: inline;
   padding-top: 30px;

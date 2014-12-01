@@ -25,18 +25,32 @@
            version    : 'v2.1'
          });
 
-         Parse.FacebookUtils.logIn(null, {
- success: function(user) {
-     if (!user.existed()) {
-       alert("User signed up and logged in through Facebook!");
-     } else {
-       alert("User logged in through Facebook!");
-     }   },   error: function(user, error) {
-     alert("User cancelled the Facebook login or did not fully authorize.");
- } });
 
+        Parse.FacebookUtils.logIn(null, {
+          success: function(user) {
+            if (!user.existed()) {
+              FB.api('/me', function(response) {
+                if (!response.error) {
+                  user.set("username", response.name)
+                  user.save(null, {
+                    success: function(user) {
+                      console.log('Success! User log in via Facebook and username updated.')
+                    },
+                    error: function(user, error) {
+                      console.log("Oops, something went wrong saving your name.");
+                    }
+                  });
+                } else {
+                  console.log("Oops something went wrong with facebook.");
+                }
+              });
+            } else {
+              console.log('User')
+            }
+          }
+        });
 
-       };
+    };
 
        (function(d, s, id){
           var js, fjs = d.getElementsByTagName(s)[0];
@@ -46,7 +60,6 @@
           fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
      </script>
-
 
 <div class="fb-login-button" data-max-rows="1" data-size="medium" data-show-faces="false" data-auto-logout-link="false"></div>
 

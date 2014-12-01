@@ -48,13 +48,11 @@ var app = {
     }
 };
 
-
+$('#badger-logo').draggable();
 
 $('#badger-logo').click(function() {
-  var $self = $(this);
-  $self.draggable();
-  $self.one('webkitAnimationEnd', function() {
-    $self.removeClass('pulse');
+  $(this).one('webkitAnimationEnd', function() {
+    $(this).removeClass('pulse');
   }).addClass('pulse');
 });
 
