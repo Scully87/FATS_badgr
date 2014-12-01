@@ -1,21 +1,7 @@
-/*
- * Licensed to the Apache Software Foundation (ASF) under one
- * or more contributor license agreements.  See the NOTICE file
- * distributed with this work for additional information
- * regarding copyright ownership.  The ASF licenses this file
- * to you under the Apache License, Version 2.0 (the
- * "License"); you may not use this file except in compliance
- * with the License.  You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing,
- * software distributed under the License is distributed on an
- * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
- * KIND, either express or implied.  See the License for the
- * specific language governing permissions and limitations
- * under the License.
- */
+//===============
+//  APP EVENTS
+//===============
+
 var app = {
     // Application Constructor
     initialize: function() {
@@ -48,6 +34,55 @@ var app = {
     }
 };
 
+//===============
+//   PARSE DB
+//===============
+  Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQdblOHEBvZSwi94z2bHjKZuJ");
+
+  $('.logout_button').on('click', function() {
+    Parse.User.logOut();
+    var currentUser = Parse.User.current();
+    console.log(currentUser);
+  });
+
+  Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQdblOHEBvZSwi94z2bHjKZuJ");
+
+    $('#sign_up_button').on('click', function() {
+      var self = this;
+      var username = $('#username').val()
+      var password = $('#password').val()
+      Parse.User.signUp(username, password, { ACL: new Parse.ACL() }, {
+        success: function(user) {
+            window.location.href="link.html"
+            console.log('Success!')
+          },
+        error: function(user, error) {
+          console.log('Error!')
+          }
+      });
+    });
+
+    $('#sign_in_button').on('click', function(event) {
+
+      event.preventDefault();
+
+      var username = $('#username').val();
+      var password = $('#password').val();
+      Parse.User.logIn(username, password, {
+        success: function(user) {
+          console.log('success!')
+          console.log(user)
+        },
+        error: function(user, error) {
+          console.log('login error!')
+        }
+      });
+    });
+
+
+//=================
+//   ANIMATIONS
+//=================
 $('#badger-logo').draggable();
 
 $('#badger-logo').click(function() {

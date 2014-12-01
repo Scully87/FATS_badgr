@@ -1,0 +1,33 @@
+/*========
+   MAIN
+=========*/
+
+body {
+  background: #00A79D;
+  font-family: 'Comfortaa', cursive;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.holder {
+  height: 100%;
+  width: 100%;
+}
+
+/*=========
+   USERS
+=========*/
+
+.users-page ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+
+.each {
+  width: 100%;
+  height: 100%;
+}
