@@ -15,7 +15,11 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
           var userObjectAsJSON = JSON.stringify(individualUser);
           var user = JSON.parse(userObjectAsJSON)
           $('#list-of-users').append(template(user))
-          $('.test').css('background-color');
+
+          var colors = ['#5C9FD6', '#EB8FBB', '#FED838'];
+          var randomColor = Math.floor(Math.random() * colors.length);
+
+          $('.each').css('background-color', colors[randomColor]);
         })
       }
     })
@@ -34,7 +38,7 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
 
         var recipientName = $(this).find('.username').text()
 
-        $(this).find('.username').css('background-color', 'yellow');
+        // $(this).find('.username').css('background-color', 'yellow');
 
           $('.badge').on('click', function() {
 
@@ -63,4 +67,8 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
 
           });
         });
+
     });
+
+// document.getElementById('each').style.color = random_color;
+
