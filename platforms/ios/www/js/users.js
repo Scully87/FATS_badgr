@@ -35,11 +35,38 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
 
     $(document).ready(function(){
 
-
       $('body').css('cursor', 'pointer');
 
+    var ScrollHandler = (function() {
+    //Assumes jQuery has initialized
+    var hasScrollListener = false;
+    var toggleScrollLock = function() {
+      if(!hasScrollListener) {
+          $('body').css('overflow', 'hidden');
+          $('.each').css('color', '#ff0000');
+      }
+      else {
+          $('body').css('overflow', '');
+          $('.each').css('color', '#0000ff');
+      }
+      hasScrollListener = !hasScrollListener;
+    }
+    //Return a public toggle method
+      return {
+          toggleScrollLock: toggleScrollLock
+      };
+    });
+
+    $(document).ready(function() {
+        var scrollHandler = new ScrollHandler(),
+            links = $('.each');
+            links.each(function(i, element) {
+                $(element).on('click', function(e) { scrollHandler.toggleScrollLock(); });
+            });
+    });
+
       $('.zero').click(function(){
-      $('.badge-up').slideToggle(500, 'swing');
+      $('.badge-up').slideToggle();
         $('.one .badge-up').hide();
         $('.two .badge-up').hide();
         $('.three .badge-up').hide();
@@ -146,10 +173,6 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
         $('.seven .badge-up').hide();
       });
 
-      $('.each').on('click', function(){
-        $('html,body').animate({scrollTop: $(this).offset().top}, 800);
-        });
-      });
 
       // $('.img-1').draggable();
 

@@ -175,6 +175,7 @@ body {
 }*/
 
 .img-1 {
+  display: none;
   background-image: url("/img/pussy.png");
   background-size: 110px 110px;
   z-index: 99;
@@ -189,65 +190,70 @@ body {
 }
 
 .img-2 {
+  display: none;
   background-image: url("/img/attention.png");
   background-size: 110px 110px;
   margin-top: 30px;
   /*margin: 10px;*/
   display: inline-block;
-  height: 100px;
-  width: 100px;
+  height: 110px;
+  width: 110px;
   /*border: solid;
   border-size: 2px;
   border-color: white;*/
 }
 
 .img-3 {
+  display: none;
   background-image: url("/img/gamer.png");
   background-size: 110px 110px;
   margin-top: 30px;
   /*margin: 10px;*/
   display: inline-block;
-  height: 100px;
-  width: 100px;
+  height: 110px;
+  width: 110px;
   /*border: solid;
   border-size: 2px;
   border-color: white;*/
 }
 
 .img-4 {
+  display: none;
   background-image: url("/img/nerd.png");
   background-size: 110px 110px;
   margin-top: 25px;
   /*margin: 10px;*/
   display: inline-block;
-  height: 100px;
-  width: 100px;
+  height: 110px;
+  width: 110px;
   /*border: solid;
   border-size: 2px;
   border-color: white;*/
 }
 
 .img-5 {
+  display: none;
   background-image: url("/img/pint.png");
   background-size: 110px 110px;
   margin-top: 25px;
   /*margin: 10px;*/
   display: inline-block;
-  height: 100px;
-  width: 100px;
+  height: 110px;
+  width: 110px;
   /*border: solid;
   border-size: 2px;
   border-color: white;*/
 }
 
 .img-6 {
+  display: none;
   background-image: url("/img/spanner.png");
   background-size: 110px 110px;
   margin-top: 25px;
   /*margin: 10px;*/
   display: inline-block;
-  height: 100px;
-  width: 100px;
+  height: 110px;
+  width: 110px;
   /*border: solid;
   border-size: 2px;
   border-color: white;*/
