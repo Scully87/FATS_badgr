@@ -53,7 +53,7 @@ var app = {
       var password = $('#password').val()
       Parse.User.signUp(username, password, { ACL: new Parse.ACL() }, {
         success: function(user) {
-            window.location.href="link.html"
+            window.location.href="users.html"
             console.log('Success!')
           },
         error: function(user, error) {
@@ -64,12 +64,11 @@ var app = {
 
     $('#sign_in_button').on('click', function(event) {
 
-      event.preventDefault();
-
       var username = $('#username').val();
       var password = $('#password').val();
       Parse.User.logIn(username, password, {
         success: function(user) {
+          window.location.href="users.html"
           console.log('success!')
           console.log(user)
         },
