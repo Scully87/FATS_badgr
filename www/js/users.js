@@ -1,5 +1,7 @@
 Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQdblOHEBvZSwi94z2bHjKZuJ");
 
+
+
     var source = $('#user-template').html();
     var template = Handlebars.compile(source);
 
@@ -9,7 +11,7 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
     query.find({
       success: function(data) {
         var counter = 0
-        var timArray = ['zero', 'one', 'two', 'three', 'four', 'tim']
+        var timArray = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine']
         var userList = $.each(data, function(count, listOfAllUsers) {})
         $.each(userList, function(count, individualUser) {
           var userObjectAsJSON = JSON.stringify(individualUser);
@@ -20,7 +22,7 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
           var classNumber = $('.user-number').last().text();
           $('.username-entry').last().attr('class', timArray[classNumber]);
 
-          if(counter < 5){
+          if(counter < 9){
           counter++
         } else {
           counter = 0
@@ -33,7 +35,117 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
 
     $(document).ready(function(){
 
+
       $('body').css('cursor', 'pointer');
+
+      $('.zero').click(function(){
+      $('.badge-up').slideToggle(500, 'swing');
+        $('.one .badge-up').hide();
+        $('.two .badge-up').hide();
+        $('.three .badge-up').hide();
+        $('.four .badge-up').hide();
+        $('.five .badge-up').hide();
+        $('.six .badge-up').hide();
+        $('.seven .badge-up').hide();
+        $('.eight .badge-up').hide();
+      });
+
+      $('.one').click(function(){
+      $('.badge-up').slideToggle();
+        $('.zero .badge-up').hide();
+        $('.two .badge-up').hide();
+        $('.three .badge-up').hide();
+        $('.four .badge-up').hide();
+        $('.five .badge-up').hide();
+        $('.six .badge-up').hide();
+        $('.seven .badge-up').hide();
+        $('.eight .badge-up').hide();
+      });
+
+      $('.two').click(function(){
+      $('.badge-up').slideToggle();
+        $('.zero .badge-up').hide();
+        $('.one .badge-up').hide();
+        $('.three .badge-up').hide();
+        $('.four .badge-up').hide();
+        $('.five .badge-up').hide();
+        $('.six .badge-up').hide();
+        $('.seven .badge-up').hide();
+        $('.eight .badge-up').hide();
+      });
+
+      $('.three').click(function(){
+      $('.badge-up').slideToggle();
+        $('.zero .badge-up').hide();
+        $('.one .badge-up').hide();
+        $('.two .badge-up').hide();
+        $('.four .badge-up').hide();
+        $('.five .badge-up').hide();
+        $('.six .badge-up').hide();
+        $('.seven .badge-up').hide();
+        $('.eight .badge-up').hide();
+      });
+
+      $('.four').click(function(){
+      $('.badge-up').slideToggle();
+        $('.zero .badge-up').hide();
+        $('.one .badge-up').hide();
+        $('.two .badge-up').hide();
+        $('.three .badge-up').hide();
+        $('.five .badge-up').hide();
+        $('.six .badge-up').hide();
+        $('.seven .badge-up').hide();
+        $('.eight .badge-up').hide();
+      });
+
+      $('.five').click(function(){
+      $('.badge-up').slideToggle();
+        $('.zero .badge-up').hide();
+        $('.one .badge-up').hide();
+        $('.two .badge-up').hide();
+        $('.three .badge-up').hide();
+        $('.four .badge-up').hide();
+        $('.six .badge-up').hide();
+        $('.seven .badge-up').hide();
+        $('.eight .badge-up').hide();
+      });
+
+      $('.six').click(function(){
+      $('.badge-up').slideToggle();
+        $('.zero .badge-up').hide();
+        $('.one .badge-up').hide();
+        $('.two .badge-up').hide();
+        $('.three .badge-up').hide();
+        $('.four .badge-up').hide();
+        $('.five .badge-up').hide();
+        $('.seven .badge-up').hide();
+        $('.eight .badge-up').hide();
+      });
+
+      $('.seven').click(function(){
+      $('.badge-up').slideToggle();
+        $('.zero .badge-up').hide();
+        $('.one .badge-up').hide();
+        $('.two .badge-up').hide();
+        $('.three .badge-up').hide();
+        $('.four .badge-up').hide();
+        $('.five .badge-up').hide();
+        $('.six .badge-up').hide();
+        $('.eight .badge-up').hide();
+      });
+
+      $('.eight').click(function(){
+      $('.badge-up').slideToggle();
+        $('.zero .badge-up').hide();
+        $('.one .badge-up').hide();
+        $('.two .badge-up').hide();
+        $('.three .badge-up').hide();
+        $('.four .badge-up').hide();
+        $('.five .badge-up').hide();
+        $('.six .badge-up').hide();
+        $('.seven .badge-up').hide();
+      });
+
 
       // $('.badge').on('click', function() {
       //   console.log('you have clicked on a badge')
