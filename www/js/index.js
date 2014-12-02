@@ -97,3 +97,7 @@ $('#badger-logo').on('click', function() {
     $('#popupBasic').toggle("slow", function(){
     });
 });
+
+$("#fbk-button").click(function() {
+$('#fbk-button').css('border-bottom-style', 'none');
+});

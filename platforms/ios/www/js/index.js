@@ -92,8 +92,14 @@ $('#badger-logo').click(function() {
 });
 
 $('#badger-logo').on('click', function() {
-  $('.home-text').toggle();
-  $('#fbk-button').toggle();
+  $('.home-text').fadeToggle("slow");
+  $('#fbk-button').fadeToggle("slow");
     $('#popupBasic').toggle("slow", function(){
     });
+});
+
+$('#fbk-button').on('click', function() {
+  $('#fbk-button').css({
+    'border-bottom-width': '0%'
+  });
 });
