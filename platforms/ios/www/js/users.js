@@ -1,6 +1,6 @@
 Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQdblOHEBvZSwi94z2bHjKZuJ");
 
-    // generates list of users
+
 
     var source = $('#user-template').html();
     var template = Handlebars.compile(source);
@@ -10,25 +10,148 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
     query.limit(100)
     query.find({
       success: function(data) {
+        var counter = 0
+        var timArray = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine']
         var userList = $.each(data, function(count, listOfAllUsers) {})
         $.each(userList, function(count, individualUser) {
           var userObjectAsJSON = JSON.stringify(individualUser);
           var user = JSON.parse(userObjectAsJSON)
+          user.userNumber = counter
+
           $('#list-of-users').append(template(user))
+          var classNumber = $('.user-number').last().text();
+          $('.username-entry').last().attr('class', timArray[classNumber]);
 
-          var colors = ['#5C9FD6', '#EB8FBB', '#FED838'];
-          var randomColor = Math.floor(Math.random() * colors.length);
+          if(counter < 9){
+          counter++
+        } else {
+          counter = 0
+        }
 
-          $('.each').css('background-color', colors[randomColor]);
         })
       }
     })
-
     // allows user to select user, then select badge, which transmits name of badge and user information to Parse database
 
     $(document).ready(function(){
 
+
       $('body').css('cursor', 'pointer');
+
+      $('.zero').click(function(){
+      $('.badge-up').slideToggle(500, 'swing');
+        $('.one .badge-up').hide();
+        $('.two .badge-up').hide();
+        $('.three .badge-up').hide();
+        $('.four .badge-up').hide();
+        $('.five .badge-up').hide();
+        $('.six .badge-up').hide();
+        $('.seven .badge-up').hide();
+        $('.eight .badge-up').hide();
+      });
+
+      $('.one').click(function(){
+      $('.badge-up').slideToggle();
+        $('.zero .badge-up').hide();
+        $('.two .badge-up').hide();
+        $('.three .badge-up').hide();
+        $('.four .badge-up').hide();
+        $('.five .badge-up').hide();
+        $('.six .badge-up').hide();
+        $('.seven .badge-up').hide();
+        $('.eight .badge-up').hide();
+      });
+
+      $('.two').click(function(){
+      $('.badge-up').slideToggle();
+        $('.zero .badge-up').hide();
+        $('.one .badge-up').hide();
+        $('.three .badge-up').hide();
+        $('.four .badge-up').hide();
+        $('.five .badge-up').hide();
+        $('.six .badge-up').hide();
+        $('.seven .badge-up').hide();
+        $('.eight .badge-up').hide();
+      });
+
+      $('.three').click(function(){
+      $('.badge-up').slideToggle();
+        $('.zero .badge-up').hide();
+        $('.one .badge-up').hide();
+        $('.two .badge-up').hide();
+        $('.four .badge-up').hide();
+        $('.five .badge-up').hide();
+        $('.six .badge-up').hide();
+        $('.seven .badge-up').hide();
+        $('.eight .badge-up').hide();
+      });
+
+      $('.four').click(function(){
+      $('.badge-up').slideToggle();
+        $('.zero .badge-up').hide();
+        $('.one .badge-up').hide();
+        $('.two .badge-up').hide();
+        $('.three .badge-up').hide();
+        $('.five .badge-up').hide();
+        $('.six .badge-up').hide();
+        $('.seven .badge-up').hide();
+        $('.eight .badge-up').hide();
+      });
+
+      $('.five').click(function(){
+      $('.badge-up').slideToggle();
+        $('.zero .badge-up').hide();
+        $('.one .badge-up').hide();
+        $('.two .badge-up').hide();
+        $('.three .badge-up').hide();
+        $('.four .badge-up').hide();
+        $('.six .badge-up').hide();
+        $('.seven .badge-up').hide();
+        $('.eight .badge-up').hide();
+      });
+
+      $('.six').click(function(){
+      $('.badge-up').slideToggle();
+        $('.zero .badge-up').hide();
+        $('.one .badge-up').hide();
+        $('.two .badge-up').hide();
+        $('.three .badge-up').hide();
+        $('.four .badge-up').hide();
+        $('.five .badge-up').hide();
+        $('.seven .badge-up').hide();
+        $('.eight .badge-up').hide();
+      });
+
+      $('.seven').click(function(){
+      $('.badge-up').slideToggle();
+        $('.zero .badge-up').hide();
+        $('.one .badge-up').hide();
+        $('.two .badge-up').hide();
+        $('.three .badge-up').hide();
+        $('.four .badge-up').hide();
+        $('.five .badge-up').hide();
+        $('.six .badge-up').hide();
+        $('.eight .badge-up').hide();
+      });
+
+      $('.eight').click(function(){
+      $('.badge-up').slideToggle();
+        $('.zero .badge-up').hide();
+        $('.one .badge-up').hide();
+        $('.two .badge-up').hide();
+        $('.three .badge-up').hide();
+        $('.four .badge-up').hide();
+        $('.five .badge-up').hide();
+        $('.six .badge-up').hide();
+        $('.seven .badge-up').hide();
+      });
+
+      $('.each').on('click', function(){
+        $('html,body').animate({scrollTop: $(this).offset().top}, 800);
+        });
+      });
+
+      // $('.img-1').draggable();
 
       // $('.badge').on('click', function() {
       //   console.log('you have clicked on a badge')
@@ -67,8 +190,4 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
 
           });
         });
-
     });
-
-// document.getElementById('each').style.color = random_color;
-

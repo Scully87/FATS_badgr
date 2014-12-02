@@ -15,6 +15,7 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="js/jquery.ui.touch-punch.min.js"></script>
   <link href='http://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
+  <script src="http:#//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
   <link type="text/javascript" src="js/jquery.min.js" />
 </head>
 <body>
@@ -27,7 +28,20 @@
             <li class='username-entry'>
               <p class='user-number'>{{userNumber}}</p>
               <p class='username'>{{username}}</p>
-              <section class="badge-up">BADGES</section>
+              <section class="badge-up">
+                <section class="badge-container">
+                  <section class="top-row">
+                    <section class="img-1"></section>
+                    <section class="img-2"></section>
+                    <section class="img-3"></section>
+                  </section>
+                  <section class="bottom-row">
+                    <section class="img-4"></section>
+                    <section class="img-5"></section>
+                    <section class="img-6"></section>
+                  </section>
+                </section>
+              </section>
             </li>
           </section>
         </template>
@@ -39,8 +53,12 @@
 <script type="text/javascript" src="cordova.js"></script>
 <script type="text/javascript" src="js/users.js"></script>
 <script type="text/javascript">
-  $.mobile.loadingMessage = false;
   app.initialize();
+</script>
+<script type="text/javascript">
+  $(document).ready( function() {
+    $(".ui-loader").hide();
+});
 </script>
 </body>
 </html>

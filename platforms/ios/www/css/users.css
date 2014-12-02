@@ -2,9 +2,21 @@
    MAIN
 =========*/
 
+button, li , a, *:hover {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important;
+}
+
 body {
-  background: #00A79D;
   font-family: 'Comfortaa', cursive;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: 'Comfortaa', cursive;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
 }
 
 .wrapper {
@@ -28,14 +40,223 @@ body {
   text-align: center;
 }
 
-.each {
-  padding-top: 12px;
+.zero {
+  background-color: #70CACF;
+  padding-top: 1px;
   width: 100%;
   height: 100%;
   color: white;
-  font-size: 1.9em;
-  z-index: 99;
+  font-size: 2.1em;
+  /*border-color: white;
+  border: solid 1px;*/
 }
 
+.one {
+  background-color: #EB8FBB;
+  padding-top: 1px;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 2.1em;
+  /*border-color: white;
+  border: solid 1px;*/
+}
 
+.two {
+  background-color: #FED838;
+  padding-top: 1px;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 2.1em;
+  /*border-color: white;
+  border: solid 1px;*/
+}
+
+.three {
+  background-color:  #5C9FD6;
+  padding-top: 1px;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 2.1em;
+ /* border-color: white;
+  border: solid 1px;*/
+}
+
+.four {
+  background-color: #B5DAA1;
+  padding-top: 1px;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 2.1em;
+  /*border-color: white;
+  border: solid 1px;*/
+}
+
+.five {
+  background-color: #F79F8B;
+  padding-top: 1px;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 2.1em;
+ /* border-color: white;
+  border: solid 1px;*/
+}
+
+.six {
+  background-color: #70CACF;
+  padding-top: 1px;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 2.1em;
+ /* border-color: white;
+  border: solid 1px;*/
+}
+
+.seven {
+  background-color: #EB8FBB;
+  padding-top: 1px;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 2.1em;
+ /* border-color: white;
+  border: solid 1px;*/
+}
+
+.eight {
+  background-color: #FED838;
+  padding-top: 1px;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 2.1em;
+ /* border-color: white;
+  border: solid 1px;*/
+}
+
+.nine {
+  background-color: #5C9FD6;
+  padding-top: 1px;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 2.1em;
+ /* border-color: white;
+  border: solid 1px;*/
+}
+
+.user-number {
+  display: none;
+}
+
+/*================
+   BADGE POP-UP
+================*/
+
+.badge-up {
+  display: none;
+  background-color: #00A79D;
+  width:100%;
+  height: 300px;
+}
+
+.badge-container {
+  width: 100%;
+  height: 100%;
+}
+
+/*.top-row {
+  margin-top: 40px;
+}*/
+
+.img-1 {
+  background-image: url("/img/pussy.png");
+  background-size: 110px 110px;
+  z-index: 99;
+  margin-top: 30px;
+  display: inline-block;
+  height: 110px;
+  width: 110px;
+  /*margin: 10px;*/
+  /*border: solid;
+  border-size: 2px;
+  border-color: white;*/
+}
+
+.img-2 {
+  background-image: url("/img/attention.png");
+  background-size: 110px 110px;
+  margin-top: 30px;
+  /*margin: 10px;*/
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  /*border: solid;
+  border-size: 2px;
+  border-color: white;*/
+}
+
+.img-3 {
+  background-image: url("/img/gamer.png");
+  background-size: 110px 110px;
+  margin-top: 30px;
+  /*margin: 10px;*/
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  /*border: solid;
+  border-size: 2px;
+  border-color: white;*/
+}
+
+.img-4 {
+  background-image: url("/img/nerd.png");
+  background-size: 110px 110px;
+  margin-top: 25px;
+  /*margin: 10px;*/
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  /*border: solid;
+  border-size: 2px;
+  border-color: white;*/
+}
+
+.img-5 {
+  background-image: url("/img/pint.png");
+  background-size: 110px 110px;
+  margin-top: 25px;
+  /*margin: 10px;*/
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  /*border: solid;
+  border-size: 2px;
+  border-color: white;*/
+}
+
+.img-6 {
+  background-image: url("/img/spanner.png");
+  background-size: 110px 110px;
+  margin-top: 25px;
+  /*margin: 10px;*/
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  /*border: solid;
+  border-size: 2px;
+  border-color: white;*/
+}
+
+.badge-down {
+  display: none;
+  background-color: white;
+  width:100%;
+  height: 300px;
+}
 

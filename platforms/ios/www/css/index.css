@@ -1,7 +1,7 @@
 /*===============
       MAIN
 ===============*/
-*{
+* {
   font-family: 'Comfortaa', cursive;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -107,7 +107,7 @@ input {
   -webkit-transform: scale3d(0.9, 0.9, 1);
 }
 .pulse {
-  -webkit-animation: pulse 400ms;
+  -webkit-animation: pulse 500ms;
 }
 @-webkit-keyframes pulse {
   0% { -webkit-transform: scale3d(0.9,0,9,1); }
@@ -115,21 +115,6 @@ input {
   40% { -webkit-transform: scale3d(0.95,0.95,1); }
   70% { -webkit-transform: scale3d(1.05,1.05,1); }
   100% { -webkit-transform: scale3d(1,1,1); }
-}
-
-@keyframes boom {
-  0% {
-    margin-top:-34px;
-    box-shadow:0px 34px 50px rgba(0,0,0,.1);
-    background-color:rgb(180,185,190);
-    transform:scale(1.1);
-  }
-  100%{
-    margin-top:0px;
-   box-shadow:0px 5px 4px rgba(0,0,0,.5);
-    background-color:rgb(200,210,221);
-    transform:scale(.8);
-  }
 }
 
 /*==============
