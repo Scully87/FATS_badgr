@@ -92,7 +92,8 @@ $('#badger-logo').click(function() {
 });
 
 $('#badger-logo').on('click', function() {
-  $('.home-text').toggle();
+  $('.home-text').fadeToggle("slow");
+  $('#fbk-button').fadeToggle("slow");
     $('#popupBasic').toggle("slow", function(){
     });
 });
