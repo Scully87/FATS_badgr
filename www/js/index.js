@@ -94,3 +94,4 @@ $('#badger-logo').on('click', function() {
     $('#popupBasic').toggle("slow", function(){
     });
 });
+
