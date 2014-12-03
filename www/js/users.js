@@ -2,6 +2,7 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
 
 
 
+
     var source = $('#user-template').html();
     var template = Handlebars.compile(source);
 
@@ -58,12 +59,38 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
     });
 
     $(document).ready(function() {
+
+      var username = 'nil'
+      console.log(username)
+
         var scrollHandler = new ScrollHandler(),
             links = $('.each');
             links.each(function(i, element) {
-                $(element).on('click', function(e) { scrollHandler.toggleScrollLock(); });
+                $(element).on('click', function(e) {
+
+                  username = $(this).find('.username').text()
+                  // console.log(username)
+                  scrollHandler.toggleScrollLock(); });
             });
-    });
+
+      $(document).on('click', '.img-1', function(){
+        alert("You awarded " + username + " with " + $(this).attr('class'))
+       });
+      $(document).on('click', '.img-2', function(){
+        alert("You awarded " + username + " with " + $(this).attr('class'))
+       });
+      $(document).on('click', '.img-3', function(){
+        alert("You awarded " + username + " with " + $(this).attr('class'))
+       });
+      $(document).on('click', '.img-4', function(){
+        alert("You awarded " + username + " with " + $(this).attr('class'))
+       });
+      $(document).on('click', '.img-5', function(){
+        alert("You awarded " + username + " with " + $(this).attr('class'))
+       });
+      $(document).on('click', '.img-6', function(){
+        alert("You awarded " + username + " with " + $(this).attr('class'))
+       });
 
           $('.img-1').hide();
           $('.img-2').hide();
@@ -71,7 +98,6 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
           $('.img-4').hide();
           $('.img-5').hide();
           $('.img-6').hide();
-
 
       $('.zero .username').click(function(){
         $('.badge-up').slideToggle(function() {
@@ -244,14 +270,7 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
         $('.seven .badge-up').hide();
       });
 
-      // $('.img-1').draggable();
-
-
-      // $('.img-1').draggable();
-
-      // $('.badge').on('click', function() {
-      //   console.log('you have clicked on a badge')
-      // });
+  });
 
       $(document).on('click', '.username-entry', function() {
 
@@ -259,8 +278,8 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
 
         // $(this).find('.username').css('background-color', 'yellow');
 
-          $('.badge').on('click', function() {
-
+          $('#img .img-1').on('click', function() {
+            console.log('hello')
             var badgeObject = Parse.Object.extend("Badges");
             var badge = new badgeObject();
             var badgeName = $(this).attr('name')

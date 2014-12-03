@@ -65,8 +65,22 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
             });
     });
 
-      $('.zero').click(function(){
-      $('.badge-up').slideToggle();
+          $('.img-1').hide();
+          $('.img-2').hide();
+          $('.img-3').hide();
+          $('.img-4').hide();
+          $('.img-5').hide();
+          $('.img-6').hide();
+
+      $('.zero .username').click(function(){
+        $('.badge-up').slideToggle(function() {
+          $('.img-1').fadeIn(600);
+          $('.img-2').fadeIn(600);
+          $('.img-3').fadeIn(600);
+          $('.img-4').fadeIn(600);
+          $('.img-5').fadeIn(600);
+          $('.img-6').fadeIn(600);
+        });
         $('.one .badge-up').hide();
         $('.two .badge-up').hide();
         $('.three .badge-up').hide();
@@ -77,8 +91,15 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
         $('.eight .badge-up').hide();
       });
 
-      $('.one').click(function(){
-      $('.badge-up').slideToggle();
+      $('.one .username').click(function(){
+      $('.badge-up').slideToggle(function() {
+          $('.img-1').fadeIn(600);
+          $('.img-2').fadeIn(600);
+          $('.img-3').fadeIn(600);
+          $('.img-4').fadeIn(600);
+          $('.img-5').fadeIn(600);
+          $('.img-6').fadeIn(600);
+        });
         $('.zero .badge-up').hide();
         $('.two .badge-up').hide();
         $('.three .badge-up').hide();
@@ -89,8 +110,15 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
         $('.eight .badge-up').hide();
       });
 
-      $('.two').click(function(){
-      $('.badge-up').slideToggle();
+      $('.two .username').click(function(){
+      $('.badge-up').slideToggle(function() {
+          $('.img-1').fadeIn(600);
+          $('.img-2').fadeIn(600);
+          $('.img-3').fadeIn(600);
+          $('.img-4').fadeIn(600);
+          $('.img-5').fadeIn(600);
+          $('.img-6').fadeIn(600);
+        });
         $('.zero .badge-up').hide();
         $('.one .badge-up').hide();
         $('.three .badge-up').hide();
@@ -101,8 +129,15 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
         $('.eight .badge-up').hide();
       });
 
-      $('.three').click(function(){
-      $('.badge-up').slideToggle();
+      $('.three .username').click(function(){
+      $('.badge-up').slideToggle(function() {
+          $('.img-1').fadeIn(600);
+          $('.img-2').fadeIn(600);
+          $('.img-3').fadeIn(600);
+          $('.img-4').fadeIn(600);
+          $('.img-5').fadeIn(600);
+          $('.img-6').fadeIn(600);
+        });
         $('.zero .badge-up').hide();
         $('.one .badge-up').hide();
         $('.two .badge-up').hide();
@@ -113,8 +148,15 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
         $('.eight .badge-up').hide();
       });
 
-      $('.four').click(function(){
-      $('.badge-up').slideToggle();
+      $('.four .username').click(function(){
+      $('.badge-up').slideToggle(function() {
+          $('.img-1').fadeIn(600);
+          $('.img-2').fadeIn(600);
+          $('.img-3').fadeIn(600);
+          $('.img-4').fadeIn(600);
+          $('.img-5').fadeIn(600);
+          $('.img-6').fadeIn(600);
+        });
         $('.zero .badge-up').hide();
         $('.one .badge-up').hide();
         $('.two .badge-up').hide();
@@ -125,8 +167,15 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
         $('.eight .badge-up').hide();
       });
 
-      $('.five').click(function(){
-      $('.badge-up').slideToggle();
+      $('.five .username').click(function(){
+      $('.badge-up').slideToggle(function() {
+          $('.img-1').fadeIn(600);
+          $('.img-2').fadeIn(600);
+          $('.img-3').fadeIn(600);
+          $('.img-4').fadeIn(600);
+          $('.img-5').fadeIn(600);
+          $('.img-6').fadeIn(600);
+        });
         $('.zero .badge-up').hide();
         $('.one .badge-up').hide();
         $('.two .badge-up').hide();
@@ -137,8 +186,15 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
         $('.eight .badge-up').hide();
       });
 
-      $('.six').click(function(){
-      $('.badge-up').slideToggle();
+      $('.six .username').click(function(){
+      $('.badge-up').slideToggle(function() {
+          $('.img-1').fadeIn(600);
+          $('.img-2').fadeIn(600);
+          $('.img-3').fadeIn(600);
+          $('.img-4').fadeIn(600);
+          $('.img-5').fadeIn(600);
+          $('.img-6').fadeIn(600);
+        });
         $('.zero .badge-up').hide();
         $('.one .badge-up').hide();
         $('.two .badge-up').hide();
@@ -149,8 +205,15 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
         $('.eight .badge-up').hide();
       });
 
-      $('.seven').click(function(){
-      $('.badge-up').slideToggle();
+      $('.seven .username').click(function(){
+      $('.badge-up').slideToggle(function() {
+          $('.img-1').fadeIn(600);
+          $('.img-2').fadeIn(600);
+          $('.img-3').fadeIn(600);
+          $('.img-4').fadeIn(600);
+          $('.img-5').fadeIn(600);
+          $('.img-6').fadeIn(600);
+        });
         $('.zero .badge-up').hide();
         $('.one .badge-up').hide();
         $('.two .badge-up').hide();
@@ -161,8 +224,15 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
         $('.eight .badge-up').hide();
       });
 
-      $('.eight').click(function(){
-      $('.badge-up').slideToggle();
+      $('.eight .username').click(function(){
+      $('.badge-up').slideToggle(function() {
+          $('.img-1').fadeIn(600);
+          $('.img-2').fadeIn(600);
+          $('.img-3').fadeIn(600);
+          $('.img-4').fadeIn(600);
+          $('.img-5').fadeIn(600);
+          $('.img-6').fadeIn(600);
+        });
         $('.zero .badge-up').hide();
         $('.one .badge-up').hide();
         $('.two .badge-up').hide();
@@ -172,6 +242,8 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
         $('.six .badge-up').hide();
         $('.seven .badge-up').hide();
       });
+
+      // $('.img-1').draggable();
 
 
       // $('.img-1').draggable();
@@ -186,8 +258,8 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
 
         // $(this).find('.username').css('background-color', 'yellow');
 
-          $('.badge').on('click', function() {
-
+          $('#img .img-1').on('click', function() {
+            console.log('hello')
             var badgeObject = Parse.Object.extend("Badges");
             var badge = new badgeObject();
             var badgeName = $(this).attr('name')
