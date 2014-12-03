@@ -174,7 +174,7 @@ body {
   margin-top: 40px;
 }*/
 
-.img-1 {
+.absolute-pussy {
   display: none;
   background-image: url("/img/pussy.png");
   background-size: 110px 110px;
@@ -189,7 +189,7 @@ body {
   border-color: white;*/
 }
 
-.img-2 {
+.attention-seeker {
   display: none;
   background-image: url("/img/attention.png");
   background-size: 110px 110px;
@@ -203,7 +203,7 @@ body {
   border-color: white;*/
 }
 
-.img-3 {
+.hardcore-gamer {
   display: none;
   background-image: url("/img/gamer.png");
   background-size: 110px 110px;
@@ -217,7 +217,7 @@ body {
   border-color: white;*/
 }
 
-.img-4 {
+.nerd-alert {
   display: none;
   background-image: url("/img/nerd.png");
   background-size: 110px 110px;
@@ -231,7 +231,7 @@ body {
   border-color: white;*/
 }
 
-.img-5 {
+.heavy-drinker {
   display: none;
   background-image: url("/img/pint.png");
   background-size: 110px 110px;
@@ -245,7 +245,7 @@ body {
   border-color: white;*/
 }
 
-.img-6 {
+.proper-spanner {
   display: none;
   background-image: url("/img/spanner.png");
   background-size: 110px 110px;
@@ -266,3 +266,53 @@ body {
   height: 300px;
 }
 
+/*================
+   NOTIFICATION
+================*/
+
+.notification {
+  display: none;
+  opacity: 1;
+  position: fixed;
+  margin-left: 12.5%;
+  margin-right: auto;
+  top: 25%;
+  z-index: 999;
+  background-color: #CC99FF;
+  height: 60%;
+  width: 75%;
+  border: 1px white;
+  border-style: solid;
+  border-radius: 10px;
+}
+
+.notification p {
+  text-align: center;
+  font-size: 2em;
+  color: black;
+}
+
+.img-notif {
+  margin-right: auto;
+  margin-left: 28%;
+}
+
+.but-close {
+  margin-left: 40%;
+  margin-top: 5%;
+  font-size: 2em;
+}
+
+/*==================
+  PROFILE BUTTON
+==================*/
+
+/*.profile-button {
+  background-image: url('/img/50logo-01.png');
+  background-size: 70px 70px;
+  position: fixed;
+  width: 70px;
+  height: 70px;
+  bottom: 10px;
+  left: 10px;
+}*/

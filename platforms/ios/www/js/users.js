@@ -57,6 +57,8 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
 
     $(document).ready(function() {
 
+      $('.profile-button').draggable();
+
       var username = 'nil'
       console.log(username)
 
@@ -69,41 +71,178 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
                   // console.log(username)
                   scrollHandler.toggleScrollLock(); });
             });
-    });
-      $(document).on('click', '.img-1', function(){
-        console.log("You awarded " + username + " with " + $(this).attr('class'))
-       });
-      $(document).on('click', '.img-2', function(){
-        console.log("You awarded " + username + " with " + $(this).attr('class'))
-       });
-      $(document).on('click', '.img-3', function(){
-        console.log("You awarded " + username + " with " + $(this).attr('class'))
-       });
-      $(document).on('click', '.img-4', function(){
-        console.log("You awarded " + username + " with " + $(this).attr('class'))
-       });
-      $(document).on('click', '.img-5', function(){
-        console.log("You awarded " + username + " with " + $(this).attr('class'))
-       });
-      $(document).on('click', '.img-6', function(){
-        console.log("You awarded " + username + " with " + $(this).attr('class'))
+
+      $(document).on('click', '.absolute-pussy', function(){
+        $('.notification').fadeIn(300);
+        $('.notification p').html("You awarded " + username + " with The 'ABSOLUTE PUSSY BADGE!!'")
+        $('.notification .img-notif').html("<img src='img/pussy.png'>")
+
+            var badgeObject = Parse.Object.extend("Badges");
+            var badge = new badgeObject();
+            var badgeName = $(this).attr('name')
+            var senderUserObject = Parse.User.current();
+            var senderUsername = senderUserObject.getUsername();
+
+            badge.set("recipient", username);
+            badge.set("badge_name", $(this).attr('class'));
+            badge.set("sender", senderUserObject);
+            badge.set("username", senderUsername);
+            badge.save(null, {
+              success: function(badge) {
+                console.log('SUCCESSFULLY STORED IN DATABASE');
+              },
+              error: function(badge, error) {
+                console.log('FAIL, NOT STORED IN DATABASE!');
+              }
+            });
+        console.log("You awarded " + username + " with " +$(this).attr('class'))
        });
 
-          $('.img-1').hide();
-          $('.img-2').hide();
-          $('.img-3').hide();
-          $('.img-4').hide();
-          $('.img-5').hide();
-          $('.img-6').hide();
+      $(document).on('click', '.attention-seeker', function(){
+        $('.notification').fadeIn(300);
+        $('.notification p').html("You awarded " + username + " with The 'ATTENTION SEEKER BADGE!!'")
+        $('.notification .img-notif').html("<img src='img/attention.png'>")
+
+            var badgeObject = Parse.Object.extend("Badges");
+            var badge = new badgeObject();
+            var badgeName = $(this).attr('name')
+            var senderUserObject = Parse.User.current();
+            var senderUsername = senderUserObject.getUsername();
+
+            badge.set("recipient", username);
+            badge.set("badge_name", $(this).attr('class'));
+            badge.set("sender", senderUserObject);
+            badge.set("username", senderUsername);
+            badge.save(null, {
+              success: function(badge) {
+                console.log('SUCCESSFULLY STORED IN DATABASE');
+              },
+              error: function(badge, error) {
+                console.log('FAIL, NOT STORED IN DATABASE!');
+              }
+            });
+        console.log("You awarded " + username + " with " +$(this).attr('class'))
+       });
+      $(document).on('click', '.hardcore-gamer', function(){
+        $('.notification').fadeIn(300);
+        $('.notification p').html("You awarded " + username + " with The 'HARDCORE GAMER BADGE!!'")
+        $('.notification .img-notif').html("<img src='img/gamer.png'>")
+
+            var badgeObject = Parse.Object.extend("Badges");
+            var badge = new badgeObject();
+            var badgeName = $(this).attr('name')
+            var senderUserObject = Parse.User.current();
+            var senderUsername = senderUserObject.getUsername();
+
+            badge.set("recipient", username);
+            badge.set("badge_name", $(this).attr('class'));
+            badge.set("sender", senderUserObject);
+            badge.set("username", senderUsername);
+            badge.save(null, {
+              success: function(badge) {
+                console.log('SUCCESSFULLY STORED IN DATABASE');
+              },
+              error: function(badge, error) {
+                console.log('FAIL, NOT STORED IN DATABASE!');
+              }
+            });
+        console.log("You awarded " + username + " with " +$(this).attr('class'))
+       });
+      $(document).on('click', '.nerd-alert', function(){
+        $('.notification').fadeIn(300);
+        $('.notification p').html("You awarded " + username + " with The 'NERD ALERT BADGE!!'")
+        $('.notification .img-notif').html("<img src='img/nerd.png'>")
+
+            var badgeObject = Parse.Object.extend("Badges");
+            var badge = new badgeObject();
+            var badgeName = $(this).attr('name')
+            var senderUserObject = Parse.User.current();
+            var senderUsername = senderUserObject.getUsername();
+
+            badge.set("recipient", username);
+            badge.set("badge_name", $(this).attr('class'));
+            badge.set("sender", senderUserObject);
+            badge.set("username", senderUsername);
+            badge.save(null, {
+              success: function(badge) {
+                console.log('SUCCESSFULLY STORED IN DATABASE');
+              },
+              error: function(badge, error) {
+                console.log('FAIL, NOT STORED IN DATABASE!');
+              }
+            });
+        console.log("You awarded " + username + " with " +$(this).attr('class'))
+       });
+      $(document).on('click', '.heavy-drinker', function(){
+        $('.notification').fadeIn(300);
+        $('.notification p').html("You awarded " + username + " with The 'INTOXICATION BADGE!!'")
+        $('.notification .img-notif').html("<img src='img/pint.png'>")
+
+            var badgeObject = Parse.Object.extend("Badges");
+            var badge = new badgeObject();
+            var badgeName = $(this).attr('name')
+            var senderUserObject = Parse.User.current();
+            var senderUsername = senderUserObject.getUsername();
+
+            badge.set("recipient", username);
+            badge.set("badge_name", $(this).attr('class'));
+            badge.set("sender", senderUserObject);
+            badge.set("username", senderUsername);
+            badge.save(null, {
+              success: function(badge) {
+                console.log('SUCCESSFULLY STORED IN DATABASE');
+              },
+              error: function(badge, error) {
+                console.log('FAIL, NOT STORED IN DATABASE!');
+              }
+            });
+        console.log("You awarded " + username + " with " +$(this).attr('class'))
+       });
+      $(document).on('click', '.proper-spanner', function(){
+      $('.notification').fadeIn(300);
+        $('.notification p').html("You awarded " + username + " with 'The PROPA SPANNER BADGE!!'")
+        $('.notification .img-notif').html("<img src='img/spanner.png'>")
+
+            var badgeObject = Parse.Object.extend("Badges");
+            var badge = new badgeObject();
+            var badgeName = $(this).attr('name')
+            var senderUserObject = Parse.User.current();
+            var senderUsername = senderUserObject.getUsername();
+
+            badge.set("recipient", username);
+            badge.set("badge_name", $(this).attr('class'));
+            badge.set("sender", senderUserObject);
+            badge.set("username", senderUsername);
+            badge.save(null, {
+              success: function(badge) {
+                console.log('SUCCESSFULLY STORED IN DATABASE');
+              },
+              error: function(badge, error) {
+                console.log('FAIL, NOT STORED IN DATABASE!');
+              }
+            });
+        console.log("You awarded " + username + " with " +$(this).attr('class'))
+       });
+
+        $('.notification').on('click', function() {
+          $(this).fadeOut('500');
+        });
+
+          $('.absolute-pussy').hide();
+          $('.attention-seeker').hide();
+          $('.hardcore-gamer').hide();
+          $('.nerd-alert').hide();
+          $('.heavy-drinker').hide();
+          $('.proper-spanner').hide();
 
       $('.zero .username').click(function(){
         $('.badge-up').slideToggle(function() {
-          $('.img-1').fadeIn(600);
-          $('.img-2').fadeIn(600);
-          $('.img-3').fadeIn(600);
-          $('.img-4').fadeIn(600);
-          $('.img-5').fadeIn(600);
-          $('.img-6').fadeIn(600);
+          $('.absolute-pussy').fadeIn(600);
+          $('.attention-seeker').fadeIn(600);
+          $('.hardcore-gamer').fadeIn(600);
+          $('.nerd-alert').fadeIn(600);
+          $('.heavy-drinker').fadeIn(600);
+          $('.proper-spanner').fadeIn(600);
         });
         $('.one .badge-up').hide();
         $('.two .badge-up').hide();
@@ -117,12 +256,12 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
 
       $('.one .username').click(function(){
       $('.badge-up').slideToggle(function() {
-          $('.img-1').fadeIn(600);
-          $('.img-2').fadeIn(600);
-          $('.img-3').fadeIn(600);
-          $('.img-4').fadeIn(600);
-          $('.img-5').fadeIn(600);
-          $('.img-6').fadeIn(600);
+          $('.absolute-pussy').fadeIn(600);
+          $('.attention-seeker').fadeIn(600);
+          $('.hardcore-gamer').fadeIn(600);
+          $('.nerd-alert').fadeIn(600);
+          $('.heavy-drinker').fadeIn(600);
+          $('.proper-spanner').fadeIn(600);
         });
         $('.zero .badge-up').hide();
         $('.two .badge-up').hide();
@@ -136,12 +275,12 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
 
       $('.two .username').click(function(){
       $('.badge-up').slideToggle(function() {
-          $('.img-1').fadeIn(600);
-          $('.img-2').fadeIn(600);
-          $('.img-3').fadeIn(600);
-          $('.img-4').fadeIn(600);
-          $('.img-5').fadeIn(600);
-          $('.img-6').fadeIn(600);
+          $('.absolute-pussy').fadeIn(600);
+          $('.attention-seeker').fadeIn(600);
+          $('.hardcore-gamer').fadeIn(600);
+          $('.nerd-alert').fadeIn(600);
+          $('.heavy-drinker').fadeIn(600);
+          $('.proper-spanner').fadeIn(600);
         });
         $('.zero .badge-up').hide();
         $('.one .badge-up').hide();
@@ -155,12 +294,12 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
 
       $('.three .username').click(function(){
       $('.badge-up').slideToggle(function() {
-          $('.img-1').fadeIn(600);
-          $('.img-2').fadeIn(600);
-          $('.img-3').fadeIn(600);
-          $('.img-4').fadeIn(600);
-          $('.img-5').fadeIn(600);
-          $('.img-6').fadeIn(600);
+          $('.absolute-pussy').fadeIn(600);
+          $('.attention-seeker').fadeIn(600);
+          $('.hardcore-gamer').fadeIn(600);
+          $('.nerd-alert').fadeIn(600);
+          $('.heavy-drinker').fadeIn(600);
+          $('.proper-spanner').fadeIn(600);
         });
         $('.zero .badge-up').hide();
         $('.one .badge-up').hide();
@@ -174,12 +313,12 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
 
       $('.four .username').click(function(){
       $('.badge-up').slideToggle(function() {
-          $('.img-1').fadeIn(600);
-          $('.img-2').fadeIn(600);
-          $('.img-3').fadeIn(600);
-          $('.img-4').fadeIn(600);
-          $('.img-5').fadeIn(600);
-          $('.img-6').fadeIn(600);
+          $('.absolute-pussy').fadeIn(600);
+          $('.attention-seeker').fadeIn(600);
+          $('.hardcore-gamer').fadeIn(600);
+          $('.nerd-alert').fadeIn(600);
+          $('.heavy-drinker').fadeIn(600);
+          $('.proper-spanner').fadeIn(600);
         });
         $('.zero .badge-up').hide();
         $('.one .badge-up').hide();
@@ -193,12 +332,12 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
 
       $('.five .username').click(function(){
       $('.badge-up').slideToggle(function() {
-          $('.img-1').fadeIn(600);
-          $('.img-2').fadeIn(600);
-          $('.img-3').fadeIn(600);
-          $('.img-4').fadeIn(600);
-          $('.img-5').fadeIn(600);
-          $('.img-6').fadeIn(600);
+          $('.absolute-pussy').fadeIn(600);
+          $('.attention-seeker').fadeIn(600);
+          $('.hardcore-gamer').fadeIn(600);
+          $('.nerd-alert').fadeIn(600);
+          $('.heavy-drinker').fadeIn(600);
+          $('.proper-spanner').fadeIn(600);
         });
         $('.zero .badge-up').hide();
         $('.one .badge-up').hide();
@@ -212,12 +351,12 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
 
       $('.six .username').click(function(){
       $('.badge-up').slideToggle(function() {
-          $('.img-1').fadeIn(600);
-          $('.img-2').fadeIn(600);
-          $('.img-3').fadeIn(600);
-          $('.img-4').fadeIn(600);
-          $('.img-5').fadeIn(600);
-          $('.img-6').fadeIn(600);
+          $('.absolute-pussy').fadeIn(600);
+          $('.attention-seeker').fadeIn(600);
+          $('.hardcore-gamer').fadeIn(600);
+          $('.nerd-alert').fadeIn(600);
+          $('.heavy-drinker').fadeIn(600);
+          $('.proper-spanner').fadeIn(600);
         });
         $('.zero .badge-up').hide();
         $('.one .badge-up').hide();
@@ -231,12 +370,12 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
 
       $('.seven .username').click(function(){
       $('.badge-up').slideToggle(function() {
-          $('.img-1').fadeIn(600);
-          $('.img-2').fadeIn(600);
-          $('.img-3').fadeIn(600);
-          $('.img-4').fadeIn(600);
-          $('.img-5').fadeIn(600);
-          $('.img-6').fadeIn(600);
+          $('.absolute-pussy').fadeIn(600);
+          $('.attention-seeker').fadeIn(600);
+          $('.hardcore-gamer').fadeIn(600);
+          $('.nerd-alert').fadeIn(600);
+          $('.heavy-drinker').fadeIn(600);
+          $('.proper-spanner').fadeIn(600);
         });
         $('.zero .badge-up').hide();
         $('.one .badge-up').hide();
@@ -250,12 +389,12 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
 
       $('.eight .username').click(function(){
       $('.badge-up').slideToggle(function() {
-          $('.img-1').fadeIn(600);
-          $('.img-2').fadeIn(600);
-          $('.img-3').fadeIn(600);
-          $('.img-4').fadeIn(600);
-          $('.img-5').fadeIn(600);
-          $('.img-6').fadeIn(600);
+          $('.absolute-pussy').fadeIn(600);
+          $('.attention-seeker').fadeIn(600);
+          $('.hardcore-gamer').fadeIn(600);
+          $('.nerd-alert').fadeIn(600);
+          $('.heavy-drinker').fadeIn(600);
+          $('.proper-spanner').fadeIn(600);
         });
         $('.zero .badge-up').hide();
         $('.one .badge-up').hide();
@@ -266,6 +405,8 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
         $('.six .badge-up').hide();
         $('.seven .badge-up').hide();
       });
+    });
+
 
 
 

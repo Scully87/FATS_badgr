@@ -55,6 +55,8 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
       };
     });
 
+      // $('.profile-button').draggable();
+
     $(document).ready(function() {
 
       var username = 'nil'
@@ -404,6 +406,8 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
         $('.seven .badge-up').hide();
       });
     });
+
+
 
 
       $(document).on('click', '.username-entry', function() {

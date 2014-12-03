@@ -302,3 +302,17 @@ body {
   margin-top: 5%;
   font-size: 2em;
 }
+
+/*==================
+  PROFILE BUTTON
+==================*/
+
+.profile-button {
+  background-image: url('/img/50logo-01.png');
+  background-size: 70px 70px;
+  position: fixed;
+  width: 70px;
+  height: 70px;
+  bottom: 10px;
+  left: 10px;
+}
