@@ -1,7 +1,5 @@
 Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQdblOHEBvZSwi94z2bHjKZuJ");
 
-
-
     var source = $('#user-template').html();
     var template = Handlebars.compile(source);
 
@@ -58,12 +56,38 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
     });
 
     $(document).ready(function() {
+
+      var username = 'nil'
+      console.log(username)
+
         var scrollHandler = new ScrollHandler(),
             links = $('.each');
             links.each(function(i, element) {
-                $(element).on('click', function(e) { scrollHandler.toggleScrollLock(); });
+                $(element).on('click', function(e) {
+
+                  username = $(this).find('.username').text()
+                  // console.log(username)
+                  scrollHandler.toggleScrollLock(); });
             });
     });
+      $(document).on('click', '.img-1', function(){
+        console.log("You awarded " + username + " with " + $(this).attr('class'))
+       });
+      $(document).on('click', '.img-2', function(){
+        console.log("You awarded " + username + " with " + $(this).attr('class'))
+       });
+      $(document).on('click', '.img-3', function(){
+        console.log("You awarded " + username + " with " + $(this).attr('class'))
+       });
+      $(document).on('click', '.img-4', function(){
+        console.log("You awarded " + username + " with " + $(this).attr('class'))
+       });
+      $(document).on('click', '.img-5', function(){
+        console.log("You awarded " + username + " with " + $(this).attr('class'))
+       });
+      $(document).on('click', '.img-6', function(){
+        console.log("You awarded " + username + " with " + $(this).attr('class'))
+       });
 
           $('.img-1').hide();
           $('.img-2').hide();
@@ -243,14 +267,7 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
         $('.seven .badge-up').hide();
       });
 
-      // $('.img-1').draggable();
 
-
-      // $('.img-1').draggable();
-
-      // $('.badge').on('click', function() {
-      //   console.log('you have clicked on a badge')
-      // });
 
       $(document).on('click', '.username-entry', function() {
 
