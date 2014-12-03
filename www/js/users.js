@@ -72,9 +72,8 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
 
       $(document).on('click', '.absolute-pussy', function(){
         $('.notification').fadeIn(300);
-        $('.notification p').html("You awarded " + username + " with The ABSOLUTE PUSSY BADGE!!")
+        $('.notification p').html("You awarded " + username + " with The 'ABSOLUTE PUSSY BADGE!!'")
         $('.notification .img-notif').html("<img src='img/pussy.png'>")
-        $('.notification').fadeOut(8000);
 
             var badgeObject = Parse.Object.extend("Badges");
             var badge = new badgeObject();
@@ -99,9 +98,8 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
 
       $(document).on('click', '.attention-seeker', function(){
         $('.notification').fadeIn(300);
-        $('.notification p').html("You awarded " + username + " with The ATTENTION SEEKER BADGE!!")
+        $('.notification p').html("You awarded " + username + " with The 'ATTENTION SEEKER BADGE!!'")
         $('.notification .img-notif').html("<img src='img/attention.png'>")
-        $('.notification').fadeOut(8000);
 
             var badgeObject = Parse.Object.extend("Badges");
             var badge = new badgeObject();
@@ -125,9 +123,8 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
        });
       $(document).on('click', '.hardcore-gamer', function(){
         $('.notification').fadeIn(300);
-        $('.notification p').html("You awarded " + username + " with The HARDCORE GAMER BADGE!!")
+        $('.notification p').html("You awarded " + username + " with The 'HARDCORE GAMER BADGE!!'")
         $('.notification .img-notif').html("<img src='img/gamer.png'>")
-        $('.notification').fadeOut(8000);
 
             var badgeObject = Parse.Object.extend("Badges");
             var badge = new badgeObject();
@@ -151,9 +148,8 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
        });
       $(document).on('click', '.nerd-alert', function(){
         $('.notification').fadeIn(300);
-        $('.notification p').html("You awarded " + username + " with The NERD ALERT BADGE!!")
+        $('.notification p').html("You awarded " + username + " with The 'NERD ALERT BADGE!!'")
         $('.notification .img-notif').html("<img src='img/nerd.png'>")
-        $('.notification').fadeOut(8000);
 
             var badgeObject = Parse.Object.extend("Badges");
             var badge = new badgeObject();
@@ -177,9 +173,8 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
        });
       $(document).on('click', '.heavy-drinker', function(){
         $('.notification').fadeIn(300);
-        $('.notification p').html("You awarded " + username + " with The HEAVY DRINKER BADGE!!")
+        $('.notification p').html("You awarded " + username + " with The 'INTOXICATION BADGE!!'")
         $('.notification .img-notif').html("<img src='img/pint.png'>")
-        $('.notification').fadeOut(8000);
 
             var badgeObject = Parse.Object.extend("Badges");
             var badge = new badgeObject();
@@ -203,9 +198,8 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
        });
       $(document).on('click', '.proper-spanner', function(){
       $('.notification').fadeIn(300);
-        $('.notification p').html("You awarded " + username + " with The PROPER SPANNER BADGE!!")
+        $('.notification p').html("You awarded " + username + " with 'The PROPA SPANNER BADGE!!'")
         $('.notification .img-notif').html("<img src='img/spanner.png'>")
-        $('.notification').fadeOut(8000);
 
             var badgeObject = Parse.Object.extend("Badges");
             var badge = new badgeObject();
@@ -228,9 +222,9 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
         console.log("You awarded " + username + " with " +$(this).attr('class'))
        });
 
-      $('.close').on('click', function() {
-        $('.notification').hide();
-      });
+        $('.notification').on('click', function() {
+          $(this).fadeOut('500');
+        });
 
           $('.absolute-pussy').hide();
           $('.attention-seeker').hide();
