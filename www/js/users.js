@@ -74,7 +74,7 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
         $('.notification').fadeIn(300);
         $('.notification p').html("You awarded " + username + " with The ABSOLUTE PUSSY BADGE!!")
         $('.notification .img-notif').html("<img src='img/pussy.png'>")
-        $('.notification').fadeOut(10000);
+        $('.notification').fadeOut(8000);
 
             var badgeObject = Parse.Object.extend("Badges");
             var badge = new badgeObject();
@@ -88,10 +88,10 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
             badge.set("username", senderUsername);
             badge.save(null, {
               success: function(badge) {
-                console.log('SUCCESS!');
+                console.log('SUCCESSFULLY STORED IN DATABASE');
               },
               error: function(badge, error) {
-                console.log('FAIL!');
+                console.log('FAIL, NOT STORED IN DATABASE!');
               }
             });
         console.log("You awarded " + username + " with " +$(this).attr('class'))
@@ -101,7 +101,7 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
         $('.notification').fadeIn(300);
         $('.notification p').html("You awarded " + username + " with The ATTENTION SEEKER BADGE!!")
         $('.notification .img-notif').html("<img src='img/attention.png'>")
-        $('.notification').fadeOut(10000);
+        $('.notification').fadeOut(8000);
 
             var badgeObject = Parse.Object.extend("Badges");
             var badge = new badgeObject();
@@ -115,10 +115,10 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
             badge.set("username", senderUsername);
             badge.save(null, {
               success: function(badge) {
-                console.log('SUCCESS!');
+                console.log('SUCCESSFULLY STORED IN DATABASE');
               },
               error: function(badge, error) {
-                console.log('FAIL!');
+                console.log('FAIL, NOT STORED IN DATABASE!');
               }
             });
         console.log("You awarded " + username + " with " +$(this).attr('class'))
@@ -127,7 +127,7 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
         $('.notification').fadeIn(300);
         $('.notification p').html("You awarded " + username + " with The HARDCORE GAMER BADGE!!")
         $('.notification .img-notif').html("<img src='img/gamer.png'>")
-        $('.notification').fadeOut(10000);
+        $('.notification').fadeOut(8000);
 
             var badgeObject = Parse.Object.extend("Badges");
             var badge = new badgeObject();
@@ -141,10 +141,10 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
             badge.set("username", senderUsername);
             badge.save(null, {
               success: function(badge) {
-                console.log('SUCCESS!');
+                console.log('SUCCESSFULLY STORED IN DATABASE');
               },
               error: function(badge, error) {
-                console.log('FAIL!');
+                console.log('FAIL, NOT STORED IN DATABASE!');
               }
             });
         console.log("You awarded " + username + " with " +$(this).attr('class'))
@@ -153,7 +153,7 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
         $('.notification').fadeIn(300);
         $('.notification p').html("You awarded " + username + " with The NERD ALERT BADGE!!")
         $('.notification .img-notif').html("<img src='img/nerd.png'>")
-        $('.notification').fadeOut(10000);
+        $('.notification').fadeOut(8000);
 
             var badgeObject = Parse.Object.extend("Badges");
             var badge = new badgeObject();
@@ -167,10 +167,10 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
             badge.set("username", senderUsername);
             badge.save(null, {
               success: function(badge) {
-                console.log('SUCCESS!');
+                console.log('SUCCESSFULLY STORED IN DATABASE');
               },
               error: function(badge, error) {
-                console.log('FAIL!');
+                console.log('FAIL, NOT STORED IN DATABASE!');
               }
             });
         console.log("You awarded " + username + " with " +$(this).attr('class'))
@@ -179,7 +179,7 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
         $('.notification').fadeIn(300);
         $('.notification p').html("You awarded " + username + " with The HEAVY DRINKER BADGE!!")
         $('.notification .img-notif').html("<img src='img/pint.png'>")
-        $('.notification').fadeOut(10000);
+        $('.notification').fadeOut(8000);
 
             var badgeObject = Parse.Object.extend("Badges");
             var badge = new badgeObject();
@@ -193,10 +193,10 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
             badge.set("username", senderUsername);
             badge.save(null, {
               success: function(badge) {
-                console.log('SUCCESS!');
+                console.log('SUCCESSFULLY STORED IN DATABASE');
               },
               error: function(badge, error) {
-                console.log('FAIL!');
+                console.log('FAIL, NOT STORED IN DATABASE!');
               }
             });
         console.log("You awarded " + username + " with " +$(this).attr('class'))
@@ -205,7 +205,7 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
       $('.notification').fadeIn(300);
         $('.notification p').html("You awarded " + username + " with The PROPER SPANNER BADGE!!")
         $('.notification .img-notif').html("<img src='img/spanner.png'>")
-        $('.notification').fadeOut(10000);
+        $('.notification').fadeOut(8000);
 
             var badgeObject = Parse.Object.extend("Badges");
             var badge = new badgeObject();
@@ -219,14 +219,18 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
             badge.set("username", senderUsername);
             badge.save(null, {
               success: function(badge) {
-                console.log('SUCCESS!');
+                console.log('SUCCESSFULLY STORED IN DATABASE');
               },
               error: function(badge, error) {
-                console.log('FAIL!');
+                console.log('FAIL, NOT STORED IN DATABASE!');
               }
             });
         console.log("You awarded " + username + " with " +$(this).attr('class'))
        });
+
+      $('.close').on('click', function() {
+        $('.notification').hide();
+      });
 
           $('.absolute-pussy').hide();
           $('.attention-seeker').hide();

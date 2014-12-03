@@ -279,7 +279,7 @@ body {
   top: 25%;
   z-index: 999;
   background-color: #CC99FF;
-  height: 50%;
+  height: 60%;
   width: 75%;
   border: 1px white;
   border-style: solid;
@@ -297,3 +297,8 @@ body {
   margin-left: 28%;
 }
 
+.but-close {
+  margin-left: 40%;
+  margin-top: 5%;
+  font-size: 2em;
+}
