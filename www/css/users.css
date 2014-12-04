@@ -311,10 +311,11 @@ body {
 }
 
 .img-notif img {
-  margin-bottom: 5%;
+  padding-bottom: 15%;
+  margin-bottom: 15%;
   display: inline-block;
-  width: 50%;
-  height: 50%;
+  width: 45%;
+  height: 45%;
   position: relative;
   margin-right: auto;
   margin-left: auto;

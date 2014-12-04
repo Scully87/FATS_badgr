@@ -82,7 +82,7 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
 
       $(document).on('click', '.absolute-pussy', function(){
         $('.notification').fadeIn(300);
-        $('.notification p').html("You awarded " + username + " with The 'ABSOLUTE PUSSY BADGE!!'")
+        $('.notification p').html("You awarded " + username + " with The 'ANIMAL LOVER BADGE!!'")
         $('.notification .img-notif').html("<img src='img/pussy.png'>")
 
             var badgeObject = Parse.Object.extend("Badges");

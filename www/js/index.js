@@ -92,6 +92,7 @@ $('#badger-logo').click(function() {
 
 $('#badger-logo').on('click', function() {
     $('#popupBasic').toggle("slow", function(){
+      $('#fbk-button').toggle(600);
     });
 });
 

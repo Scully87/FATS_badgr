@@ -306,13 +306,19 @@ body {
 }
 
 .img-notif {
-  margin-left: 35%;
+  padding-left: 25%;
+  width: 100%;
 }
 
-.but-close {
-  margin-left: 45%;
-  margin-top: 5%;
-  font-size: 2em;
+.img-notif img {
+  padding-bottom: 15%;
+  margin-bottom: 15%;
+  display: inline-block;
+  width: 45%;
+  height: 45%;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /*==================
