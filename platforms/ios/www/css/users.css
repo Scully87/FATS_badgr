@@ -292,7 +292,7 @@ body {
   top: 20%;
   z-index: 999;
   background-color: #CC99FF;
-  height: 60%;
+  height: 40%;
   width: 75%;
   font-family: "proxima-nova-soft",sans-serif;
   border-radius: 7.5%;
@@ -300,7 +300,7 @@ body {
 
 .notification p {
   text-align: center;
-  font-size: 2em;
+  font-size: 1em;
   color: white;
 }
 
