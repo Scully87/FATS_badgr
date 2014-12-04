@@ -13,7 +13,7 @@
 
 body {
   background: #00A79D;
-  width:100%;
+  width: 100%;
   position: relative;
 }
 
@@ -31,15 +31,6 @@ body {
 /*=================
   Pop-up login
 ==================*/
-
-/*.popup {
-  width: 80%;
-  height: 10%;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50%;
-}*/
 
 #popupBasic {
   margin-left: auto;

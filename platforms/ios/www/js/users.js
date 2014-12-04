@@ -79,7 +79,7 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
 
       $(document).on('click', '.absolute-pussy', function(){
         $('.notification').fadeIn(300);
-        $('.notification p').html("You awarded " + username + " with The 'ANIMAL LOVER BADGE!!'")
+        $('.notification p').html("You awarded " + username + " with a ANIMAL LOVER badge!")
         $('.notification .img-notif').html("<img src='img/pussy.png'>")
 
             var badgeObject = Parse.Object.extend("Badges");
@@ -105,7 +105,7 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
 
       $(document).on('click', '.attention-seeker', function(){
         $('.notification').fadeIn(300);
-        $('.notification p').html("You awarded " + username + " with The 'ATTENTION SEEKER BADGE!!'")
+        $('.notification p').html("You awarded " + username + " with a ATTENTION SEEKER badge!")
         $('.notification .img-notif').html("<img src='img/attention.png'>")
 
             var badgeObject = Parse.Object.extend("Badges");
@@ -130,7 +130,7 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
        });
       $(document).on('click', '.hardcore-gamer', function(){
         $('.notification').fadeIn(300);
-        $('.notification p').html("You awarded " + username + " with The 'HARDCORE GAMER BADGE!!'")
+        $('.notification p').html("You awarded " + username + " with a HARDCORE GAMER badge!'")
         $('.notification .img-notif').html("<img src='img/gamer.png'>")
 
             var badgeObject = Parse.Object.extend("Badges");
@@ -155,7 +155,7 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
        });
       $(document).on('click', '.nerd-alert', function(){
         $('.notification').fadeIn(300);
-        $('.notification p').html("You awarded " + username + " with The 'NERD ALERT BADGE!!'")
+        $('.notification p').html("You awarded " + username + " with a NERD ALERT badge!'")
         $('.notification .img-notif').html("<img src='img/nerd.png'>")
 
             var badgeObject = Parse.Object.extend("Badges");
@@ -180,7 +180,7 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
        });
       $(document).on('click', '.heavy-drinker', function(){
         $('.notification').fadeIn(300);
-        $('.notification p').html("You awarded " + username + " with The 'INTOXICATION BADGE!!'")
+        $('.notification p').html("You awarded " + username + " with The INTOXICATION badge!'")
         $('.notification .img-notif').html("<img src='img/pint.png'>")
 
             var badgeObject = Parse.Object.extend("Badges");
@@ -205,7 +205,7 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
        });
       $(document).on('click', '.proper-spanner', function(){
       $('.notification').fadeIn(300);
-        $('.notification p').html("You awarded " + username + " with 'The PROPA SPANNER BADGE!!'")
+        $('.notification p').html("You awarded " + username + " with the PROPA SPANNER badge!")
         $('.notification .img-notif').html("<img src='img/spanner.png'>")
 
             var badgeObject = Parse.Object.extend("Badges");

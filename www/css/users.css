@@ -23,7 +23,6 @@ a:visited {
 
 body {
   font-family: "proxima-nova-soft",sans-serif;
-  text-transform: uppercase;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -55,6 +54,7 @@ body {
   padding: 0;
   list-style-type: none;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .zero {
@@ -292,17 +292,16 @@ body {
   top: 20%;
   z-index: 999;
   background-color: #CC99FF;
-  height: 60%;
+  height: 40%;
   width: 75%;
-  border: 1px white;
-  border-style: solid;
-  border-radius: 10px;
+  font-family: "proxima-nova-soft",sans-serif;
+  border-radius: 7.5%;
 }
 
 .notification p {
   text-align: center;
-  font-size: 2em;
-  color: black;
+  font-size: 1em;
+  color: white;
 }
 
 .img-notif {
