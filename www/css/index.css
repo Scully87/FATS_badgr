@@ -33,13 +33,14 @@ body {
 ==================*/
 
 #popupBasic {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 20%;
   background-color: #00A79D;
   width: 80%;
   display: none;
   text-align: center;
+  position: fixed;
 }
 
 input {
@@ -77,6 +78,7 @@ input {
   color: white;
   background-color: #3B5998;
   font-weight: 600;
+  border-radius: 0.25em;
 }
 
 [type='text']:focus {
@@ -129,16 +131,15 @@ input {
    MAIN TEXT
 ==============*/
 .home-text {
-  padding-top: 15%;
+  padding-top: 35%;
   height: 80px;
   width: 100%;
   text-align: center;
   letter-spacing: 2px;
-  font-size: 1.9em;
+  font-size: 1.2em;
   color: white;
   position: fixed;
-  /*margin: 5px;*/
-  /*margin-bottom: 0px;*/
+  font-family: "proxima-nova-soft",sans-serif;
 }
 
 .home-text p {

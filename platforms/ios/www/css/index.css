@@ -40,7 +40,7 @@ body {
   width: 80%;
   display: none;
   text-align: center;
-}
+  position: fixed;
 
 input {
   margin: 0 0 0 0;
@@ -129,16 +129,15 @@ input {
    MAIN TEXT
 ==============*/
 .home-text {
-  padding-top: 15%;
+  padding-top: 35%;
   height: 80px;
   width: 100%;
   text-align: center;
   letter-spacing: 2px;
-  font-size: 1.9em;
+  font-size: 1.2em;
   color: white;
   position: fixed;
-  /*margin: 5px;*/
-  /*margin-bottom: 0px;*/
+  font-family: "proxima-nova-soft",sans-serif;
 }
 
 .home-text p {
