@@ -65,6 +65,8 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
 
     $(document).ready(function() {
 
+      $('')
+
       var username = 'nil'
       console.log(username)
 
@@ -442,6 +444,17 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
       });
     });
 
+  // $()(function () {
+  //   $('.absolute-pussy,.attention-seeker,.hardcore-gamer,.nerd-alert,.heavy-drinker,.proper-spanner').draggable({
+  //       revert: true
+  //   });
+  //   $('.username').droppable({
+  //       accept: '.absolute-pussy,.attention-seeker,.hardcore-gamer,.nerd-alert,.heavy-drinker,.proper-spanner'
+  //   });
+  // });
+
+
+
 
       $(document).on('click', '.username-entry', function() {
 
@@ -476,4 +489,5 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
 
           });
         });
+
     });
