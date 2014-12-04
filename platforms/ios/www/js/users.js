@@ -5,9 +5,6 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
     window.location.replace('index.html')
   }
 
-
-
-
     var source = $('#user-template').html();
     var template = Handlebars.compile(source);
 
@@ -62,8 +59,6 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
           toggleScrollLock: toggleScrollLock
       };
     });
-
-      // $('.profile-button').draggable();
 
     $(document).ready(function() {
 
