@@ -95,3 +95,6 @@ $('#badger-logo').on('click', function() {
     });
 });
 
+$("#fbk-button").click(function() {
+  $('#fbk-button').css('border-bottom-style', 'none');
+});
