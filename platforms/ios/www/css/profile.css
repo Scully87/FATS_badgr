@@ -62,10 +62,20 @@ footer {
   font-size: 2.1em;
   text-align: center;
   clear: both;
+  bottom: 0px;
+}
+
+.img {
+  height: 55px;
+  width: 55px;
+  margin: 0;
+  padding: 0;
+  margin-top: 10%;
 }
 
 .logout_button {
   padding-top: 30px;
+  font-family: "proxima-nova-soft",sans-serif;
 }
 
 .user-name {
@@ -73,56 +83,159 @@ footer {
   /*height: 100%;*/
   width: 100%;
   padding-top: 30px;
+  font-family: "proxima-nova-soft",sans-serif;
+  margin: 0;
   /*margin-bottom: 15px;*/
 }
 
-.main {
-  height: 100%;
-  width: 100%;
-  position: fixed;
- /* border: solid;
-  border-size: 2px;
-  border-color: white;*/
+.main-upper {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row
+  flex-direction: row;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.main-lower {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row
+  flex-direction: row;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
 }
 
 .badge-01 {
-  margin-top: 100px;
-  height: 100px;
-  width: 100px;
-  border: solid;
-  border-size: 2px;
+  position: relative;
+  height: 30%;
+  width: 32%;
+  text-align: center;
   border-color: white;
+  display: inline-block;
+  font-family: "proxima-nova-soft",sans-serif;
+  text-transform: capitalize;
+  font-size: 100%;
+  font-weight: 700;
+  color: white;
+  float: left;
+  margin-top: 0;
+}
+
+.number-of-badge-1-received {
+  font-size: 300%;
+  margin-top: -15px;
 }
 
 .badge-02 {
-  border: solid;
-  border-size: 2px;
+ position: relative;
+  height: 30%;
+  width: 32%;
+  text-align: center;
   border-color: white;
+  display: inline-block;
+  font-family: "proxima-nova-soft",sans-serif;
+  text-transform: capitalize;
+  font-size: 100%;
+  font-weight: 700;
+  color: white;
+  margin-top: 0;
+}
+
+.number-of-badges-2-received {
+  font-size: 300%;
+  margin-top: -15px;
 }
 
 .badge-03 {
-  border: solid;
-  border-size: 2px;
+  position: relative;
+  height: 30%;
+  width: 32%;
+  text-align: center;
   border-color: white;
+  display: inline-block;
+  font-family: "proxima-nova-soft",sans-serif;
+  text-transform: capitalize;
+  font-size: 100%;
+  font-weight: 700;
+  color: white;
+  float: right;
+  margin-top: 0;
+}
+
+.number-of-badges-3-received {
+  font-size: 300%;
+  margin-top: -15px;
 }
 
 .badge-04 {
-  border: solid;
-  border-size: 2px;
+  position: relative;
+  height: 30%;
+  width: 32%;
+  text-align: center;
   border-color: white;
+  display: inline-block;
+  font-family: "proxima-nova-soft",sans-serif;
+  text-transform: capitalize;
+  font-size: 100%;
+  font-weight: 700;
+  color: white;
+  float: left;
+  margin-top: 20%;
+}
+
+.number-of-badges-4-received {
+  font-size: 300%;
+  margin-top: -15px;
 }
 
 .badge-05 {
-  border: solid;
-  border-size: 2px;
+  position: relative;
+  height: 30%;
+  width: 32%;
+  text-align: center;
   border-color: white;
+  display: inline-block;
+  font-family: "proxima-nova-soft",sans-serif;
+  text-transform: capitalize;
+  font-size: 100%;
+  font-weight: 700;
+  color: white;
+  float: left;
+  margin-top: 20%;
+}
+
+.number-of-badges-5-received {
+  font-size: 300%;
+  margin-top: -15px;
 }
 
 .badge-06 {
-  border: solid;
-  border-size: 2px;
+  position: relative;
+  height: 30%;
+  width: 32%;
+  text-align: center;
   border-color: white;
+  display: inline-block;
+  font-family: "proxima-nova-soft",sans-serif;
+  text-transform: capitalize;
+  font-size: 100%;
+  font-weight: 700;
+  color: white;
+  float: left;
+  margin-top: 20%;
 }
+
+.number-of-badges-6-received {
+  font-size: 300%;
+  margin-top: -15px;
+}
+
+
 
 a {
   text-decoration: none;
