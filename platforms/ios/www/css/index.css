@@ -1,7 +1,7 @@
 /*===============
       MAIN
 ===============*/
-* {
+/** {
   font-family: 'Comfortaa', cursive;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -9,9 +9,10 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
+}*/
 
 body {
+  font-family: 'Comfortaa', cursive;
   background: #00A79D;
   width:100%;
   position: relative;
@@ -32,16 +33,19 @@ body {
   Pop-up login
 ==================*/
 
-.popup {
+/*.popup {
   width: 80%;
   height: 10%;
-  position: fixed;
-  margin-left: 50%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 50%;
-  left: -40%;
-}
+}*/
 
 #popupBasic {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
   background-color: #00A79D;
   width: 80%;
   display: none;
@@ -71,6 +75,7 @@ input {
 }
 
 [type='password'] {
+  margin: 1px;
   text-decoration: none;
   font-size: 1em;
   padding-left: 1em;
@@ -78,12 +83,20 @@ input {
 }
 
 [type='submit'] {
+  margin: 1px;
   color: white;
   background-color: #3B5998;
   font-weight: 600;
 }
 
 [type='text']:focus {
+  border: 0;
+  border-bottom: 5px solid #2980b9;
+  color: #3B5998;
+  outline: none;
+}
+
+[type='password']:focus {
   border: 0;
   border-bottom: 5px solid #2980b9;
   color: #3B5998;
@@ -134,7 +147,7 @@ input {
   font-size: 1.9em;
   color: white;
   position: fixed;
-  margin: 5px;
+  /*margin: 5px;*/
   /*margin-bottom: 0px;*/
 }
 

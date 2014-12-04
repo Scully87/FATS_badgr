@@ -96,6 +96,13 @@ input {
   outline: none;
 }
 
+[type='password']:focus {
+  border: 0;
+  border-bottom: 5px solid #2980b9;
+  color: #3B5998;
+  outline: none;
+}
+
 
 /*=============
   Badger Logo

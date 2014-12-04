@@ -5,6 +5,21 @@
 button, li , a, *:hover {
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important;
 }
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
 
 body {
   font-family: 'Comfortaa', cursive;
@@ -170,10 +185,6 @@ body {
   height: 100%;
 }
 
-/*.top-row {
-  margin-top: 40px;
-}*/
-
 .absolute-pussy {
   display: none;
   background-image: url("/img/pussy.png");
@@ -190,6 +201,8 @@ body {
 }
 
 .attention-seeker {
+  /*margin-left: auto;
+  margin-right: auto;*/
   display: none;
   background-image: url("/img/attention.png");
   background-size: 110px 110px;
@@ -276,7 +289,7 @@ body {
   position: fixed;
   margin-left: 12.5%;
   margin-right: auto;
-  top: 25%;
+  top: 20%;
   z-index: 999;
   background-color: #CC99FF;
   height: 60%;
@@ -293,12 +306,11 @@ body {
 }
 
 .img-notif {
-  margin-right: auto;
-  margin-left: 28%;
+  margin-left: 35%;
 }
 
 .but-close {
-  margin-left: 40%;
+  margin-left: 45%;
   margin-top: 5%;
   font-size: 2em;
 }

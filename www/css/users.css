@@ -185,10 +185,6 @@ body {
   height: 100%;
 }
 
-/*.top-row {
-  margin-top: 40px;
-}*/
-
 .absolute-pussy {
   display: none;
   background-image: url("/img/pussy.png");
@@ -205,6 +201,8 @@ body {
 }
 
 .attention-seeker {
+  /*margin-left: auto;
+  margin-right: auto;*/
   display: none;
   background-image: url("/img/attention.png");
   background-size: 110px 110px;
@@ -291,7 +289,7 @@ body {
   position: fixed;
   margin-left: 12.5%;
   margin-right: auto;
-  top: 25%;
+  top: 20%;
   z-index: 999;
   background-color: #CC99FF;
   height: 60%;
@@ -308,14 +306,18 @@ body {
 }
 
 .img-notif {
-  margin-right: auto;
-  margin-left: 28%;
+  padding-left: 25%;
+  width: 100%;
 }
 
-.but-close {
-  margin-left: 40%;
-  margin-top: 5%;
-  font-size: 2em;
+.img-notif img {
+  margin-bottom: 5%;
+  display: inline-block;
+  width: 50%;
+  height: 50%;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /*==================

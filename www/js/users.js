@@ -258,6 +258,7 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
         $('.six .badge-up').hide();
         $('.seven .badge-up').hide();
         $('.eight .badge-up').hide();
+        $('.nine .badge-up').hide();
       });
 
       $('.one .username').click(function(){
@@ -277,6 +278,7 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
         $('.six .badge-up').hide();
         $('.seven .badge-up').hide();
         $('.eight .badge-up').hide();
+        $('.nine .badge-up').hide();
       });
 
       $('.two .username').click(function(){
@@ -296,6 +298,7 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
         $('.six .badge-up').hide();
         $('.seven .badge-up').hide();
         $('.eight .badge-up').hide();
+        $('.nine .badge-up').hide();
       });
 
       $('.three .username').click(function(){
@@ -315,6 +318,7 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
         $('.six .badge-up').hide();
         $('.seven .badge-up').hide();
         $('.eight .badge-up').hide();
+        $('.nine .badge-up').hide();
       });
 
       $('.four .username').click(function(){
@@ -334,6 +338,7 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
         $('.six .badge-up').hide();
         $('.seven .badge-up').hide();
         $('.eight .badge-up').hide();
+        $('.nine .badge-up').hide();
       });
 
       $('.five .username').click(function(){
@@ -353,6 +358,7 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
         $('.six .badge-up').hide();
         $('.seven .badge-up').hide();
         $('.eight .badge-up').hide();
+        $('.nine .badge-up').hide();
       });
 
       $('.six .username').click(function(){
@@ -372,6 +378,7 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
         $('.five .badge-up').hide();
         $('.seven .badge-up').hide();
         $('.eight .badge-up').hide();
+        $('.nine .badge-up').hide();
       });
 
       $('.seven .username').click(function(){
@@ -391,6 +398,7 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
         $('.five .badge-up').hide();
         $('.six .badge-up').hide();
         $('.eight .badge-up').hide();
+        $('.nine .badge-up').hide();
       });
 
       $('.eight .username').click(function(){
@@ -410,6 +418,27 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
         $('.five .badge-up').hide();
         $('.six .badge-up').hide();
         $('.seven .badge-up').hide();
+        $('.nine .badge-up').hide();
+      });
+
+      $('.nine .username').click(function(){
+      $('.badge-up').slideToggle(function() {
+          $('.absolute-pussy').fadeIn(600);
+          $('.attention-seeker').fadeIn(600);
+          $('.hardcore-gamer').fadeIn(600);
+          $('.nerd-alert').fadeIn(600);
+          $('.heavy-drinker').fadeIn(600);
+          $('.proper-spanner').fadeIn(600);
+        });
+        $('.zero .badge-up').hide();
+        $('.one .badge-up').hide();
+        $('.two .badge-up').hide();
+        $('.three .badge-up').hide();
+        $('.four .badge-up').hide();
+        $('.five .badge-up').hide();
+        $('.six .badge-up').hide();
+        $('.seven .badge-up').hide();
+        $('.eight .badge-up').hide();
       });
     });
 
