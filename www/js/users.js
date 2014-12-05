@@ -8,9 +8,8 @@ Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQd
     var source = $('#user-template').html();
     var template = Handlebars.compile(source);
 
-    var ParseUserList = Parse.Object.extend("User");
-    var query = new Parse.Query(ParseUserList);
-    query.limit(100)
+    var ParseUserList = Parse.Object.extend("_User");
+    var query = new Parse.Query(Parse.User);
     query.find({
       success: function(data) {
         var counter = 0

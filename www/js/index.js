@@ -37,46 +37,46 @@ var app = {
 //===============
 //   PARSE DB
 //===============
-  Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQdblOHEBvZSwi94z2bHjKZuJ");
+  // Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQdblOHEBvZSwi94z2bHjKZuJ");
 
-  $('.logout_button').on('click', function() {
-    Parse.User.logOut();
-    var currentUser = Parse.User.current();
-    console.log(currentUser);
-  });
+  // $('.logout_button').on('click', function() {
+  //   Parse.User.logOut();
+  //   var currentUser = Parse.User.current();
+  //   console.log(currentUser);
+  // });
 
-  Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQdblOHEBvZSwi94z2bHjKZuJ");
+  // Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQdblOHEBvZSwi94z2bHjKZuJ");
 
-    $('#sign_up_button').on('click', function() {
-      var self = this;
-      var username = $('#username').val()
-      var password = $('#password').val()
-      Parse.User.signUp(username, password, { ACL: new Parse.ACL() }, {
-        success: function(user) {
-            window.location.href="users.html"
-            console.log('Success!')
-          },
-        error: function(user, error) {
-          console.log('Error!')
-          }
-      });
-    });
+  //   $('#sign_up_button').on('click', function() {
+  //     var self = this;
+  //     var username = $('#username').val()
+  //     var password = $('#password').val()
+  //     Parse.User.signUp(username, password, {
+  //       success: function(user) {
+  //           window.location.href="users.html"
+  //           console.log('Success!')
+  //         },
+  //       error: function(user, error) {
+  //         console.log('Error!')
+  //         }
+  //     });
+  //   });
 
-    $('#sign_in_button').on('click', function(event) {
+  //   $('#sign_in_button').on('click', function(event) {
 
-      var username = $('#username').val();
-      var password = $('#password').val();
-      Parse.User.logIn(username, password, {
-        success: function(user) {
-          window.location.href="users.html"
-          console.log('success!')
-          console.log(user)
-        },
-        error: function(user, error) {
-          console.log('login error!')
-        }
-      });
-    });
+  //     var username = $('#username').val();
+  //     var password = $('#password').val();
+  //     Parse.User.logIn(username, password, {
+  //       success: function(user) {
+  //         window.location.href="users.html"
+  //         console.log('success!')
+  //         console.log(user)
+  //       },
+  //       error: function(user, error) {
+  //         console.log('login error!')
+  //       }
+  //     });
+  //   });
 
 
 //=================

@@ -1,5 +1,4 @@
-Parse.initialize("mb5W1qycBdfI5o1n4HIa1kTay05cr3ZYWaY0ztB7", "Ju1HmxUHUi94vV1DQdblOHEBvZSwi94z2bHjKZuJ");
-
+Parse.initialize("P70VXUD04dCyhKBcfVFnFyUkLFyMh8tPjataJUrQ", "PLoXJgGw7vRLRh5tIhfXi6JdpMiR5QKUfsdbzArx");
   var currentUser = Parse.User.current();
   if(!currentUser) {
     window.location.replace('index.html')

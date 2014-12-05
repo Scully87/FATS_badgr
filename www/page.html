@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Swipe Example</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="stylesheet" type="text/css" src="css/index.css"/>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+        <script src='http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js' type='text/javascript'></script>
+    </head>
+    <body>
+        <div data-role="page" id="users">
+        <div data-role="content">
+        <section class="wrapper">
+  <section class="holder">
+    <section class="users-page"  class="ui-content">
+               <ul id='list-of-users'>
+        <template id='user-template'>
+          <section class="each">
+            <li class='username-entry'>
+              <p class='user-number'>{{userNumber}}</p>
+              <p class='username'>{{username}}</p>
+              <section class="badge-up">
+                <section class="badge-container">
+                  <section class="top-row">
+                    <section id="img" class="absolute-pussy"></section>
+                    <section id="img" class="attention-seeker"></section>
+                    <section  id="img" class="hardcore-gamer"></section>
+                  </section>
+                  <section id="img" class="bottom-row">
+                    <section id="img" class="nerd-alert"></section>
+                    <section id="img" class="heavy-drinker"></section>
+                    <section id="img" class="proper-spanner"></section>
+                  </section>
+                </section>
+              </section>
+           </li>
+          </section>
+        </template>
+      </ul>
+    </section>
+    </section>
+    </section>
+    </div>
+        </div>
+        <div data-role="page" id="profile">
+            <div data-role="content">
+               <h1>page2</h1>
+            </div>
+        </div>
+        <script>
+            $("#profile").swiperight(function() {
+                $.mobile.changePage("#users");
+                console.log('swiped to users')
+            });
+            $("#users").swipeleft(function() {
+                $.mobile.changePage("#profile");
+                console.log('swiped to profile')
+            });
+        </script>
+    </body>
