@@ -7,7 +7,7 @@ Badgr was the second project from FATS Inc as part of our final project at Maker
 
 [Check out the demo video here!](https://www.youtube.com/watch?v=sUN0YaqLpF8&list=UU1NQjRun26caQPa6D6j3dsg)
 
-(https://s3.amazonaws.com/uploads.hipchat.com/119067/1211576/BxLDQr5ySuzdB/badgr_poster-01.png)
+(http://s3.amazonaws.com/uploads.hipchat.com/119067/1211576/BxLDQr5ySuzdB/badgr_poster-01.png)
 
 
 ## Technologies Used
