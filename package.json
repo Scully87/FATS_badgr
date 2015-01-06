@@ -1,0 +1,19 @@
+{
+  "name": "FATS_badgr",
+  "version": "1.0.0",
+  "description": "Badgr - Send your friends a badge! ==================================",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Scully87/FATS_badgr.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Scully87/FATS_badgr/issues"
+  },
+  "homepage": "https://github.com/Scully87/FATS_badgr"
+}
